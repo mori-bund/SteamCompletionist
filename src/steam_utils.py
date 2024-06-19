@@ -158,6 +158,6 @@ def resolve_vanity_url(vanity):
         if steam_id:
             return steam_id
         raise ValueError("Resolution of vanity URL failed.")
-    except Exception as e:
-        print(f"Error resolving vanity URL: {e}")
+    except requests.exceptions.RequestException as error:
+        print(f"Error resolving vanity URL: {error}")
         sys.exit(1)

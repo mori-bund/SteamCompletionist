@@ -1,4 +1,8 @@
-#config file that contains my API key and Steam I
+#config file that contains my API key and Steam ID
+config.py
+
+#pylint file
+.pylintrc
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
