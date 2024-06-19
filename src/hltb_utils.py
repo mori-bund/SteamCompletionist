@@ -28,6 +28,9 @@ def get_hltb_data(game_name):
     """
     results_list = hltb().search(game_name)
 
+    if not results_list:
+        results_list = hltb().search(game_name.lower())
+
     if len(results_list) > 0:
         best_element = max(results_list, key=lambda element: element.similarity)
 
