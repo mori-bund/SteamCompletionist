@@ -21,6 +21,7 @@ Dependencies:
 """
 
 import sys
+import re
 import requests
 from steam.webapi import WebAPI
 from steam import steamid as sid
@@ -133,7 +134,7 @@ def scrape_steam_data(steamid, new_games, progress_bar):
 
     for game in new_games:
         appid = game['appid']
-        game_name = game['name'].strip()
+        game_name = re.sub(r'[^\x00-\x7F]+', '', game['name'].strip())
 
         if game_name is False:
             progress_bar.update(1)

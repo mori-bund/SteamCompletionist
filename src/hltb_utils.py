@@ -12,7 +12,6 @@ Dependencies:
     - howlongtobeatpy       Library for interacting with How Long to Beat API.
 """
 
-import re
 from howlongtobeatpy import HowLongToBeat as hltb
 
 def get_hltb_data(game_name):
@@ -24,10 +23,10 @@ def get_hltb_data(game_name):
         game_name (str): The name of the game.
 
     Returns:
-        tuple: A tuple containing the HLTB ID and completionist time for the game.
+        tuple: A tuple containing the HLTB ID, HLTB game name,
+        and completionist time for the game.
     """
-    clean_title = re.sub(r'[^a-zA-Z0-9\s]', '', game_name)
-    results_list = hltb().search(clean_title)
+    results_list = hltb().search(game_name)
 
     if len(results_list) > 0:
         best_element = max(results_list, key=lambda element: element.similarity)
