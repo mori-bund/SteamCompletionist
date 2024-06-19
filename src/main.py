@@ -35,7 +35,6 @@ from file_utils import (
     update_no_achievements
 )
 from steam_utils import get_owned_games, scrape_steam_data, resolve_vanity_url
-from hltb_utils import get_hltb_data
 from config import STEAM_ID
 
 def resolve_steamid(args):
@@ -69,6 +68,17 @@ def resolve_steamid(args):
     return steamid
 
 def parse_arguments(parser):
+    """
+    Parse command-line arguments for the Steam Completionist project.
+
+    Args:
+        parser (argparse.ArgumentParser): An instance of ArgumentParser
+        initialized with project description.
+
+    Returns:
+        argparse.Namespace: Parsed arguments as an object with attributes
+        corresponding to argument names.
+    """
     group = parser.add_mutually_exclusive_group()
     group.add_argument('-s', '--steamid', type=str,
                        help='Specify a SteamID to search (optional)')
@@ -79,6 +89,14 @@ def parse_arguments(parser):
     return parser.parse_args()
 
 def main():
+    """
+    Main entry point for the Steam Completionist project.
+
+    Parses command-line arguments to determine the action to take:
+    - If `-u` or `--update-no-achievements` is provided, updates the no_achievements.json file.
+    - Otherwise, scrapes Steam user's library for new games, retrieves achievement data,
+      and manages the no-achievement game list.
+    """
     parser = ArgumentParser(description='Steam Library Scraper to find rarest achievements')
     args = parse_arguments(parser)
 
