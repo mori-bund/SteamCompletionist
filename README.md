@@ -5,7 +5,7 @@ The Steam Completionist project is a tool designed to scrape Steam user librarie
 ## Features
 
 - **Steam API Integration**: Retrieves owned games, scrapes achievement data, checks completion status, and resolves vanity URLs.
-- **HLTB Data Integration**: Retrieves completionist time data for games from How Long to Beat API.
+- **HLTB Data Integration**: Retrieves completionist time data for games from How Long to Beat.
 - **File Handling**: Saves scraped data to JSON files, manages lists of games without achievements.
 - **Command-Line Interface**: Supports command-line options for specifying SteamID, vanity URLs, and updating no-achievement game lists.
 
