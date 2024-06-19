@@ -1,42 +1,39 @@
-# Steam Completionist
+# Steam Library Rarest Achievement Scraper
 
-Steam Completionist is a Python script designed to scrape and analyze Steam user libraries to find games with the easiest achievements to complete. It retrieves information about owned games, their rarest achievements, and the completion status of each game.
+The Steam Completionist project is a tool designed to scrape Steam user libraries to find and manage rarest achievements, update achievement data, and maintain a list of games without achievements. It integrates with How Long to Beat (HLTB) API to provide completionist time data for games.
 
 ## Features
 
-- Retrieve a list of games owned by a Steam user.
-- Identify the rarest achievement in each game based on global achievement percentages.
-- Determine whether the user has completed all achievements for a game.
-- Option to rescan games with no achievements and update the list accordingly.
+- **Steam API Integration**: Retrieves owned games, scrapes achievement data, checks completion status, and resolves vanity URLs.
+- **HLTB Data Integration**: Retrieves completionist time data for games from How Long to Beat API.
+- **File Handling**: Saves scraped data to JSON files, manages lists of games without achievements.
+- **Command-Line Interface**: Supports command-line options for specifying SteamID, vanity URLs, and updating no-achievement game lists.
 
 ## Prerequisites
 
-Before using the script, ensure you have the following:
+Before using the script, make sure you have the following:
 
 - Python 3.x installed on your system.
-- Steam API Key obtained from the [Steam Developer website](https://steamcommunity.com/dev/apikey).
-- [Steam ID](https://help.steampowered.com/en/faqs/view/2816-BE67-5B69-0FEC) of the user you want to scrape. Note that the Steam community profile must be public for the script to work.
+- Steam API Key (available from the [Steam Developer website](https://steamcommunity.com/dev/apikey)).
+- [Steam ID](https://help.steampowered.com/en/faqs/view/2816-BE67-5B69-0FEC) of the user you want to scrape. There is a command line option to scan any ID (including a vanity ID) as well. **The Steam community profile MUST be public for this to work.**
 
-## Installation
+## Usage
 
-1. Clone the repository to your local machine:
+To use the script, follow these steps:
 
-   ```bash
-   git clone https://github.com/your_username/steam-completionist.git
-   cd steam-completionist
-   ```
+1. Clone the repository.
 
 2. Install the required Python packages:
 
-   ```bash
+   ```shell
    pip install -r requirements.txt
    ```
 
 3. Set up your Steam API Key:
 
-   - Obtain your API Key from the [Steam Developer website](https://steamcommunity.com/dev/apikey) if you haven't already.
-   - Rename `con_fig.py` to `config.py`.
-   - Add your API Key and Steam ID to `config.py`:
+   - Obtain your API Key from the [Steam Developer website](https://steamcommunity.com/dev/apikey) if you don't already have one.
+   - Remove the underscore from the `con_fig.py` filename in the project directory.
+   - Add your API Key and [Steam ID](https://help.steampowered.com/en/faqs/view/2816-BE67-5B69-0FEC) to the `config.py` file:
 
      ```python
      # config.py
@@ -44,29 +41,25 @@ Before using the script, ensure you have the following:
      STEAM_ID = 'your_steam_id_here'
      ```
 
-## Usage
+4. Run the script:
 
-Run the script using the following command:
+   ```shell
+   python src/main.py [-s STEAMID] [-v VANITY] [-u]
+   ```
 
-```bash
-python main.py [-s STEAMID] [-v VANITY] [-u]
-```
-
-- Use `-s STEAMID` to specify a SteamID to scrape (optional). This overrides the Steam ID in your `config.py`.
-- Use `-v VANITY` to specify a Steam Vanity URL to scrape (optional). The vanity URL is converted to a SteamID for scraping.
-- Use `-u` to check and update the list of games with no achievements (optional). Games without achievements are added to `no_achievements.json`.
+   - Use the `-s` option to specify a SteamID to scrape (optional). This will scrape it instead of the one in your `config.py` file.
+   - Use the `-v` option to specify a Steam Vanity URL to scrape (optional). This will resolve the vanity url to a SteamID and scrape that library instead of the one in your `config.py` file.
+   - Use the `-u` option to check and update the list of games with no achievements (optional). Any scanned game that doesn't have achievements is added to the `no_achievements.txt` file so the scraper knows to not bother checking those. This options rescans this list and removes the appID of any game that now has achievements. 
 
 ## Output
 
-The script generates CSV files containing scraped data in the `data` directory. Each file corresponds to a Steam user's library and is sorted by the rarest achievement column in descending order.
+The script will generate a JSON file containing the scraped data in a `data` directory. Each JSON file corresponds to a Steam user's library and is sorted in descending order by the rarest achievement.
 
 ## Notes
 
-- This script is developed for personal use and may require further optimization.
-- Scanning large libraries or updating games without achievements may take considerable time.
-- Profile privacy settings on Steam can affect data retrieval. The script handles partially private profiles by omitting completion status if necessary.
-- Future updates may include integration with HowLongToBeat for game completion time estimates.
-
----
-
-Feel free to adjust the details based on any specific instructions or additional notes you have for users of your script. This README should provide a comprehensive overview of your project's purpose, usage, and installation steps.
+* Please let me know if you find any bugs! I am a complete amateur and just barely know what I'm doing, but I am aware this script is not optimized at all.
+* Large libraries will take a longer time to scrape the first time it is run. My 3000+ game library takes over 20 minutes to fully scrape.
+* Rescanning games without achievements will also take a long time since there are well over 10,000 games in the list.
+* If you scan a library that already has a JSON file saved, it will skip games already saved in the file. The script does NOT update the 100% status of a game when scanning again. I may add this functionality later.
+* Steam allows some granularity with making the profile private. I probably didn't catch every nuance of this. The script will close if the profile is totally locked down, and the script will return all data except completion status if achievement data is locked down.
+* Finding games by title with HLTB is a bit lackluster. I plan on improving this feature... eventually...
