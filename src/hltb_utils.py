@@ -1,5 +1,16 @@
-"""Module providing a way to interact with HLTB"""
 # hltb_utils.py
+"""
+Utility functions to interact with How Long to Beat (HLTB) API in Steam Completionist project.
+
+This module provides functions to retrieve completion times for games from HLTB API.
+
+Functions:
+    - get_hltb_data(game_name): Retrieve HLTB data for a specific game.
+
+Dependencies:
+    - re                    Module for regular expressions.
+    - howlongtobeatpy       Library for interacting with How Long to Beat API.
+"""
 
 import re
 from howlongtobeatpy import HowLongToBeat as hltb

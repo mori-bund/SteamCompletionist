@@ -1,5 +1,24 @@
-"""Module providing a way to interact with Steam's API"""
-# steam_utils.pty
+# steam_utils.py
+"""
+Utility functions to interact with Steam API in Steam Completionist project.
+
+This module provides functions to retrieve owned games, scrape achievement data,
+check completion status, resolve vanity URLs, and handle Steam API interactions.
+
+Functions:
+    - get_owned_games(steamid): Retrieve list of games owned by a Steam user.
+    - get_game_achievement_data(appid): Retrieve achievement data for a specific game.
+    - get_rarest_achievement_percentage(data): Get percentage of rarest achievement.
+    - player_has_completed(steamid, appid): Check if user has completed all achievements.
+    - scrape_steam_data(steamid, new_games, progress_bar): Scrape data for owned games.
+    - resolve_vanity_url(vanity): Resolve Steam vanity URL to SteamID.
+
+Dependencies:
+    - requests              Library for making HTTP requests.
+    - steam.webapi          Library for accessing Steam Web API.
+    - steam.steamid         Library for handling Steam IDs.
+    - config.py             Configuration file for API keys and IDs.
+"""
 
 import sys
 import requests
@@ -103,8 +122,7 @@ def scrape_steam_data(steamid, new_games, progress_bar):
 
     Args:
         steamid (str): The SteamID of the user.
-        existing_appids (set): Set of existing Steam AppIDs already scraped previously.
-        owned_games (list): List of games owned by the user.
+        new_games (list): List of games owned by the user that haven't been scraped yet.
         progress_bar (tqdm.tqdm): Progress bar for tracking progress.
 
     Returns:
@@ -132,8 +150,12 @@ def scrape_steam_data(steamid, new_games, progress_bar):
 
         has_completed = player_has_completed(steamid, appid)
 
-        scraped_data.append(
-            [appid, game_name, rarest_achievement_percentage, has_completed])
+        scraped_data.append({
+            'AppID': appid,
+            'Title': game_name,
+            'Rarest Achievement %': rarest_achievement_percentage,
+            'Completed': has_completed
+        })
 
         progress_bar.update(1)
 
