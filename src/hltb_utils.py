@@ -26,7 +26,7 @@ def get_hltb_data(game_name):
     Returns:
         tuple: A tuple containing the HLTB ID and completionist time for the game.
     """
-    clean_title = re.sub(r'[^a-z0-9\s]', '', game_name).lower()
+    clean_title = re.sub(r'[^a-zA-Z0-9\s]', '', game_name).lower()
     results_list = hltb().search(clean_title)
 
     if results_list is not None and len(results_list) > 0:
