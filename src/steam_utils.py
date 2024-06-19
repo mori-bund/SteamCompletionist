@@ -1,6 +1,6 @@
 """Module providing a way to interact with Steam's API"""
-
 # steam_utils.pty
+
 import sys
 import requests
 from steam.webapi import WebAPI
