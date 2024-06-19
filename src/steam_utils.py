@@ -24,6 +24,7 @@ import sys
 import requests
 from steam.webapi import WebAPI
 from steam import steamid as sid
+from hltb_utils import get_hltb_data
 from config import API_KEY
 
 api = WebAPI(key=API_KEY)
@@ -139,14 +140,14 @@ def scrape_steam_data(steamid, new_games, progress_bar):
             continue
 
         achievements = get_game_achievement_data(appid)
+        hltb_id, hltb_completionist_time = get_hltb_data(game_name)
 
         if achievements is None:
             no_achievements.append(appid)
             progress_bar.update(1)
             continue
 
-        rarest_achievement_percentage = get_rarest_achievement_percentage(
-            achievements)
+        rarest_achievement_percentage = get_rarest_achievement_percentage(achievements)
 
         has_completed = player_has_completed(steamid, appid)
 
@@ -154,7 +155,9 @@ def scrape_steam_data(steamid, new_games, progress_bar):
             'AppID': appid,
             'Title': game_name,
             'Rarest Achievement %': rarest_achievement_percentage,
-            'Completed': has_completed
+            'Completed': has_completed,
+            'HLTB ID': hltb_id,
+            'HLTB Completionist Time': hltb_completionist_time
         })
 
         progress_bar.update(1)

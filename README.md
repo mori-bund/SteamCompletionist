@@ -1,6 +1,6 @@
-# Steam Library Rarest Achievement Scraper
+# Steam Completionist
 
-The Steam Completionist project is a tool designed to scrape Steam user libraries to find and manage rarest achievements, update achievement data, and maintain a list of games without achievements. It pulls data from How Long to Beat (HLTB) to provide completionist time data for games.
+The Steam Completionist project is a command line tool designed to scrape Steam user libraries to find and manage rarest achievements, update achievement data, and maintain a list of games without achievements. It pulls data from How Long to Beat (HLTB) to provide completionist time data for games.
 
 ## Features
 

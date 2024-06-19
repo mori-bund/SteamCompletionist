@@ -35,6 +35,7 @@ from file_utils import (
     update_no_achievements
 )
 from steam_utils import get_owned_games, scrape_steam_data, resolve_vanity_url
+from hltb_utils import get_hltb_data
 from config import STEAM_ID
 
 def resolve_steamid(args):
