@@ -7,6 +7,10 @@ config.py
 # contents of the data directory
 data/*
 
+# Except for these specific files
+!data/no_achievements.json
+!data/steam_hltb_mapping.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
