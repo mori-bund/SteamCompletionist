@@ -1,23 +1,23 @@
 # steam_utils.py
 """
-Utility functions to interact with Steam API in Steam Completionist project.
+Utility functions to interact with the Steam API for the Steam Completionist project.
 
 This module provides functions to retrieve owned games, scrape achievement data,
 check completion status, resolve vanity URLs, and handle Steam API interactions.
 
 Functions:
-    - get_owned_games(steamid): Retrieve list of games owned by a Steam user.
+    - get_owned_games(steamid): Retrieve the list of games owned by a Steam user.
     - get_game_achievement_data(appid): Retrieve achievement data for a specific game.
-    - get_rarest_achievement_percentage(data): Get percentage of rarest achievement.
-    - player_has_completed(steamid, appid): Check if user has completed all achievements.
+    - get_rarest_achievement_percentage(data): Get the percentage of the rarest achievement.
+    - player_has_completed(steamid, appid): Check if a user has completed all achievements.
     - scrape_steam_data(steamid, new_games, progress_bar): Scrape data for owned games.
-    - resolve_vanity_url(vanity): Resolve Steam vanity URL to SteamID.
+    - resolve_vanity_url(vanity): Resolve a Steam vanity URL to a SteamID.
 
 Dependencies:
-    - requests              Library for making HTTP requests.
-    - steam.webapi          Library for accessing Steam Web API.
-    - steam.steamid         Library for handling Steam IDs.
-    - config.py             Configuration file for API keys and IDs.
+    - requests: Library for making HTTP requests.
+    - steam.webapi: Library for accessing the Steam Web API.
+    - steam.steamid: Library for handling Steam IDs.
+    - config.py: Configuration file for API keys and IDs.
 """
 
 import sys
@@ -33,7 +33,6 @@ api = WebAPI(key=API_KEY)
 def get_owned_games(steamid):
     """
     Retrieve the list of games owned by a Steam user.
-    Setting skip_unvetted_apps to false will find profile limited games.
 
     Args:
         steamid (str): The SteamID of the user.
@@ -59,8 +58,8 @@ def get_game_achievement_data(appid):
         appid (int): The Steam AppID of the game.
 
     Returns:
-        list: A list of achievement data dictionaries for the game, or None if there are none.
-              Each dictionary contains information about an achievement.
+        list or None: A list of achievement data dictionaries for the game,
+        or None if there are none.
     """
     try:
         achievement_data = api.ISteamUserStats.GetGlobalAchievementPercentagesForApp(
@@ -90,19 +89,15 @@ def get_rarest_achievement_percentage(data):
 
 def player_has_completed(steamid, appid):
     """
-    Check if a user has completed all achievements for a game. If the user's
-    profile has this data private, then the Completed column will be empty.
+    Check if a user has completed all achievements for a game.
 
     Args:
         steamid (str): The SteamID of the user.
         appid (int): The Steam AppID of the game.
 
     Returns:
-        bool or None:
-            - True if the user has completed all achievements.
-            - False if the user has not completed all achievements or
-              if data is private.
-            - None if there's an issue retrieving the data.
+        bool or None: True if the user has completed all achievements, False if not,
+                      or None if there's an issue retrieving the data.
     """
     try:
         player_data = api.ISteamUserStats.GetPlayerAchievements(
@@ -118,9 +113,7 @@ def player_has_completed(steamid, appid):
 def scrape_steam_data(steamid, new_games, progress_bar):
     """
     Scrape data for each game in a user's library to get the appid, title,
-    rarest achievement, and completion status. If a game is determined to
-    not have achievements, it will be added to a text file so it doesn't
-    get scraped in the future.
+    rarest achievement, and completion status.
 
     Args:
         steamid (str): The SteamID of the user.
@@ -128,7 +121,7 @@ def scrape_steam_data(steamid, new_games, progress_bar):
         progress_bar (tqdm.tqdm): Progress bar for tracking progress.
 
     Returns:
-        tuple: A tuple containing scraped data list and a list of appids with no achievements.
+        tuple: A tuple containing a list of scraped data and a list of appids with no achievements.
     """
     scraped_data, no_achievements = [], []
 
@@ -169,7 +162,7 @@ def scrape_steam_data(steamid, new_games, progress_bar):
 
 def resolve_vanity_url(vanity):
     """
-    Resolves a Steam vanity URL to retrieve the associated SteamID.
+    Resolve a Steam vanity URL to retrieve the associated SteamID.
 
     Args:
         vanity (str): The custom vanity URL identifier from Steam.

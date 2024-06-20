@@ -1,22 +1,21 @@
 # file_utils.py
 """
-Utility functions for file handling in Steam Completionist project.
+Utility functions for file handling in the Steam Completionist project.
 
 This module provides functions to load existing data, save data to CSV and JSON,
 manage no-achievement game lists, and handle file operations.
 
 Functions:
-    - load_existing_appids(steamid): Retrieve existing Steam AppIDs from CSV and text files.
+    - load_existing_appids(steamid): Retrieve existing Steam AppIDs from JSON files.
     - save_to_json(data, steamid): Save scraped data to JSON file sorted by rarest achievement.
-    - save_appids_without_achievements(appids): Append new appids without achievements to text file.
-    - update_no_achievements(appids, num_games, progress_bar): Update no-achievements list.
+    - save_appids_without_achievements(appids): Append new achievement-less AppIDs to a JSON file.
+    - update_no_achievements(appids, num_games, progress_bar): Update the no-achievements list.
 
 Dependencies:
-    - json                  Module for JSON file operations.
-    - os                    Module for operating system functions.
-    - pandas                Library for data manipulation and analysis.
-    - api_utils.py          Utility functions for interacting with external APIs.
-    - tqdm                  Progress bar library for visual feedback.
+    - json: Module for JSON file operations.
+    - os: Module for operating system functions.
+    - steam_utils: Utility functions for interacting with the Steam API.
+    - tqdm: Progress bar library for visual feedback.
 """
 
 import json
@@ -29,8 +28,8 @@ NO_ACHIEVEMENTS_PATH = os.path.join(DATA_DIR, 'no_achievements.json')
 
 def load_existing_appids(steamid):
     """
-    Get a list of AppIDs that have already been scanned. Gets them from an
-    existing JSON (if there is one) and from a list of games known to have
+    Get a list of AppIDs that have already been scanned. Retrieves them from an
+    existing JSON file (if there is one) and from a list of games known to have
     no achievements.
 
     Args:
@@ -86,10 +85,10 @@ def save_to_json(data, steamid):
 
 def save_appids_without_achievements(appids):
     """
-    Adds a list of appids without achievements to the JSON file.
+    Add a list of AppIDs without achievements to the JSON file.
 
     Args:
-        appids (list): List of appids without achievements.
+        appids (list): List of AppIDs without achievements.
     """
 
     existing_appids = []
@@ -107,12 +106,12 @@ def save_appids_without_achievements(appids):
 
 def update_no_achievements(appids, num_games, progress_bar):
     """
-    Update the list of appids without achievements. This is done with an
+    Update the list of AppIDs without achievements. This is done with an
     optional flag at runtime.
 
     Args:
-        appids (list): List of appids without achievements.
-        num_games (int): The total number of appids to be updated.
+        appids (list): List of AppIDs without achievements.
+        num_games (int): The total number of AppIDs to be updated.
         progress_bar (tqdm.tqdm): Progress bar for tracking progress.
     """
     updated_appids = []

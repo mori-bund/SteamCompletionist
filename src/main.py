@@ -1,9 +1,9 @@
 # main.py
 """
-Main script for Steam Completionist project.
+Main script for the Steam Completionist project.
 
-This script allows scraping of Steam user's library to find rarest achievements,
-update achievement data, and manage no-achievement game list.
+This script allows scraping of a Steam user's library to find rarest achievements,
+update achievement data, and manage the no-achievement game list.
 
 Usage:
     python main.py [-s STEAMID] [-v VANITY] [-u]
@@ -17,11 +17,11 @@ Options:
 If no options are provided, it uses STEAM_ID from config.py.
 
 Dependencies:
-    - file_utils.py         Utility functions for file handling.
-    - steam_utils.py        Functions to interact with Steam API.
-    - hltb_utils.py         Utility functions for How Long to Beat API.
+    - file_utils            Utility functions for file handling.
+    - steam_utils           Functions to interact with the Steam API.
+    - hltb_utils            Utility functions for How Long to Beat API.
     - tqdm                  Progress bar library for visual feedback.
-    - config.py             Configuration file for API keys and IDs.
+    - config                Configuration file for API keys and IDs.
 """
 
 import sys
@@ -42,7 +42,7 @@ def resolve_steamid(args):
     Resolve the SteamID based on provided command-line arguments.
 
     Args:
-        args: The parsed command-line arguments.
+        args (argparse.Namespace): The parsed command-line arguments.
 
     Returns:
         str: The resolved SteamID.
@@ -72,12 +72,12 @@ def parse_arguments(parser):
     Parse command-line arguments for the Steam Completionist project.
 
     Args:
-        parser (argparse.ArgumentParser): An instance of ArgumentParser
-        initialized with project description.
+        parser (argparse.ArgumentParser): An instance of ArgumentParser initialized
+                                          with the project description.
 
     Returns:
         argparse.Namespace: Parsed arguments as an object with attributes
-        corresponding to argument names.
+                            corresponding to argument names.
     """
     group = parser.add_mutually_exclusive_group()
     group.add_argument('-s', '--steamid', type=str,
@@ -94,7 +94,7 @@ def main():
 
     Parses command-line arguments to determine the action to take:
     - If `-u` or `--update-no-achievements` is provided, updates the no_achievements.json file.
-    - Otherwise, scrapes Steam user's library for new games, retrieves achievement data,
+    - Otherwise, scrapes the Steam user's library for new games, retrieves achievement data,
       and manages the no-achievement game list.
     """
     parser = ArgumentParser(description='Steam Library Scraper to find rarest achievements')
@@ -111,7 +111,7 @@ def main():
         parser.error('Please provide exactly one of -s, -v, or -u.')
 
     if args.update_no_achievements:
-        with open("src/no_achievements.json", 'r', encoding='utf-8') as jsonfile:
+        with open("data/no_achievements.json", 'r', encoding='utf-8') as jsonfile:
             appids = json.load(jsonfile)
         num_games = len(appids)
         progress_bar = tqdm(total=num_games, unit='games', ncols=100)
