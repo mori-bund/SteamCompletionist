@@ -14,7 +14,7 @@ Functions:
     - resolve_vanity_url(vanity): Resolve a Steam vanity URL to a SteamID.
 
 Dependencies:
-    - requests: Library for making HTTP requests.
+    - aiohttp: Library for making asynchronous HTTP requests.
     - steam.webapi: Library for accessing the Steam Web API.
     - steam.steamid: Library for handling Steam IDs.
     - config.py: Configuration file for API keys and IDs.
@@ -22,15 +22,14 @@ Dependencies:
 
 import sys
 import re
-import requests
-from steam.webapi import WebAPI
+import aiohttp
 from steam import steamid as sid
 from hltb_utils import get_hltb_data
 from config import API_KEY
 
-api = WebAPI(key=API_KEY)
+BASE_URL = "https://api.steampowered.com"
 
-def get_owned_games(steamid):
+async def get_owned_games(steamid):
     """
     Retrieve the list of games owned by a Steam user.
 
@@ -40,17 +39,23 @@ def get_owned_games(steamid):
     Returns:
         list: A list of dictionaries containing game information.
     """
-    owned_games = api.IPlayerService.GetOwnedGames(steamid=steamid, include_appinfo=True,
-                                                   include_played_free_games=True,
-                                                   appids_filter=False,
-                                                   include_free_sub=False,
-                                                   language='en',
-                                                   include_extended_appinfo=False,
-                                                   skip_unvetted_apps=False)
-    return owned_games['response']['games']
+    url = f"{BASE_URL}/IPlayerService/GetOwnedGames/v0001/"
+    params = {
+        'key': API_KEY,
+        'steamid': str(steamid),
+        'include_appinfo': 'true',
+        'include_played_free_games': 'true',
+        'include_extended_appinfo': 'False',
+        'format': 'json'
+    }
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url, params=params) as response:
+            if response.status != 200:
+                raise aiohttp.ClientError(f"HTTP Error: {response.status}")
+            owned_games = await response.json()
+    return owned_games['response'].get('games', [])
 
-
-def get_game_achievement_data(appid):
+async def get_game_achievement_data(appid):
     """
     Retrieve achievement data for a specific game.
 
@@ -61,14 +66,21 @@ def get_game_achievement_data(appid):
         list or None: A list of achievement data dictionaries for the game,
         or None if there are none.
     """
-    try:
-        achievement_data = api.ISteamUserStats.GetGlobalAchievementPercentagesForApp(
-            gameid=appid)['achievementpercentages']['achievements']
-        if achievement_data == []:
+    url = f"{BASE_URL}/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/"
+    params = {
+        'gameid': str(appid),
+        'format': 'json'
+    }
+    async with aiohttp.ClientSession() as session:
+        try:
+            async with session.get(url, params=params) as response:
+                if response.status != 200:
+                    raise aiohttp.ClientError(f"HTTP Error: {response.status}")
+                achievement_data = await response.json()
+                return achievement_data['achievementpercentages'].get('achievements', None)
+        except aiohttp.ClientError as e:
+            print(f"HTTP Error while fetching achievements for appid {appid}: {e}")  # Debug statement
             return None
-        return achievement_data
-    except requests.exceptions.HTTPError as _e:
-        return None
 
 
 def get_rarest_achievement_percentage(data):
@@ -81,13 +93,12 @@ def get_rarest_achievement_percentage(data):
     Returns:
         str: The percentage completion of the game's rarest achievement.
     """
-    rarest_percentage = min(data, key=lambda x: x.get(
-        'percent', 100)).get('percent')
+    rarest_percentage = min(data, key=lambda x: x.get('percent', 100)).get('percent')
     rounded_percentage = round(rarest_percentage, 1)
     return f"{rounded_percentage:.1f}"
 
 
-def player_has_completed(steamid, appid):
+async def player_has_completed(steamid, appid):
     """
     Check if a user has completed all achievements for a game.
 
@@ -99,18 +110,27 @@ def player_has_completed(steamid, appid):
         bool or None: True if the user has completed all achievements, False if not,
                       or None if there's an issue retrieving the data.
     """
-    try:
-        player_data = api.ISteamUserStats.GetPlayerAchievements(
-            steamid=steamid, appid=appid)
-    except requests.exceptions.HTTPError as _e:
-        return None
+    url = f"{BASE_URL}/ISteamUserStats/GetPlayerAchievements/v0001/"
+    params = {
+        'key': API_KEY,
+        'steamid': str(steamid),
+        'appid': str(appid),
+        'format': 'json'
+    }
+    async with aiohttp.ClientSession() as session:
+        try:
+            async with session.get(url, params=params) as response:
+                if response.status != 200:
+                    raise aiohttp.ClientError(f"HTTP Error: {response.status}")
+                player_data = await response.json()
+                achievements = player_data['playerstats'].get('achievements', [])
+                return all(achievement.get('achieved', False) for achievement in achievements)
+        except aiohttp.ClientError as e:
+            print(f"HTTP Error while fetching player achievements for steamid {steamid} and appid {appid}: {e}")  # Debug statement
+            return None
 
-    achievements = player_data['playerstats']['achievements']
 
-    return all(achievement.get('achieved', False) for achievement in achievements)
-
-
-def scrape_steam_data(steamid, new_games, progress_bar):
+async def scrape_steam_data(steamid, new_games, progress_bar):
     """
     Scrape data for each game in a user's library to get the appid, title,
     rarest achievement, and completion status.
@@ -126,15 +146,16 @@ def scrape_steam_data(steamid, new_games, progress_bar):
     scraped_data, no_achievements = [], []
 
     for game in new_games:
-        appid = game['appid']
+        appid = str(game['appid'])  # Ensure appid is a string
         game_name = re.sub(r'[^\x00-\x7F]+', '', game['name'].strip())
 
-        if game_name is False:
+        if not game_name:
             progress_bar.update(1)
             continue
 
-        achievements = get_game_achievement_data(appid)
-        hltb_id, hltb_game_name, hltb_completionist_time = get_hltb_data(game_name)
+        
+        achievements = await get_game_achievement_data(appid)
+        hltb_id, hltb_game_name, hltb_completionist_time = await get_hltb_data(game_name)
 
         if achievements is None:
             no_achievements.append(appid)
@@ -142,8 +163,7 @@ def scrape_steam_data(steamid, new_games, progress_bar):
             continue
 
         rarest_achievement_percentage = get_rarest_achievement_percentage(achievements)
-
-        has_completed = player_has_completed(steamid, appid)
+        has_completed = await player_has_completed(str(steamid), appid)
 
         scraped_data.append({
             'AppID': appid,

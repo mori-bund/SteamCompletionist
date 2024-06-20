@@ -26,8 +26,9 @@ Dependencies:
 
 import sys
 import json
+import asyncio
 from argparse import ArgumentParser
-from tqdm import tqdm
+from tqdm.asyncio import tqdm
 from file_utils import (
     load_existing_appids,
     save_to_json,
@@ -88,7 +89,7 @@ def parse_arguments(parser):
                        action='store_true', help='Check and update no_achievements.txt')
     return parser.parse_args()
 
-def main():
+async def main():
     """
     Main entry point for the Steam Completionist project.
 
@@ -115,16 +116,16 @@ def main():
             appids = json.load(jsonfile)
         num_games = len(appids)
         progress_bar = tqdm(total=num_games, unit='games', ncols=100)
-        update_no_achievements(appids, num_games, progress_bar)
+        await update_no_achievements(appids, num_games, progress_bar)
         sys.exit()
 
     steamid = resolve_steamid(args)
 
     try:
         existing_appids = load_existing_appids(steamid)
-        owned_games = get_owned_games(steamid)
+        owned_games = await get_owned_games(steamid)
     except Exception as _e:
-        print("Either the SteamID is invalid or the profile may be set to private.")
+        print(f"Either the SteamID is invalid or the profile may be set to private. Error: {_e}")
         sys.exit(1)
 
     new_games = [game for game in owned_games if game['appid'] not in existing_appids]
@@ -137,7 +138,7 @@ def main():
 
     try:
         new_games = [game for game in owned_games if game['appid'] not in existing_appids]
-        scraped_data, no_achievements = scrape_steam_data(steamid, new_games, progress_bar)
+        scraped_data, no_achievements = await scrape_steam_data(steamid, new_games, progress_bar)
     except Exception as error:
         print(f"Error scraping data: {error}")
         sys.exit(1)
@@ -147,4 +148,4 @@ def main():
     progress_bar.close()
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

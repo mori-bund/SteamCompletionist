@@ -10,12 +10,13 @@ Functions:
 Dependencies:
     - re: Module for regular expressions.
     - howlongtobeatpy: Library for interacting with the How Long to Beat site.
+    - aiohttp: Library for making asynchronous HTTP requests.
 """
 
 import re
 from howlongtobeatpy import HowLongToBeat as hltb
 
-def get_hltb_data(game_name):
+async def get_hltb_data(game_name):
     """
     Retrieve How Long to Beat data for a specific game.
 
@@ -27,22 +28,23 @@ def get_hltb_data(game_name):
                and completionist time (float) for the game.
                If no data is found, returns (None, None, None).
     """
-    results_list = hltb().search(game_name)
+    results_list = await hltb().async_search(game_name)
 
-    # try searching a lowercase title if not found
+    # Try searching a lowercase title if not found
     if not results_list:
-        results_list = hltb().search(game_name.lower())
+        results_list = await hltb().async_search(game_name.lower())
 
-    # try searching after removing any details about the game edition
+    # Try searching after removing any details about the game edition
     if not results_list and game_name.split()[-1].lower() == "edition":
-        results_list = hltb().search(game_name.rsplit(' ', 2)[0])
+        results_list = await hltb().async_search(game_name.rsplit(' ', 2)[0])
 
-    # try searching after removing the year from the title
+    # Try searching after removing the year from the title
     if not results_list and bool(re.search(r"\s\(\w+\)$", game_name)):
-        results_list = hltb().search(game_name.rsplit(' ', 1)[0])
+        results_list = await hltb().async_search(game_name.rsplit(' ', 1)[0])
 
+    # Try searching after removing the subtitle
     if not results_list and ':' in game_name:
-        results_list = hltb().search(game_name.split(':')[0])
+        results_list = await hltb().async_search(game_name.split(':')[0])
 
     if len(results_list) > 0:
         best_element = max(results_list, key=lambda element: element.similarity)
