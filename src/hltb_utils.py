@@ -12,7 +12,25 @@ Dependencies:
     - howlongtobeatpy       Library for interacting with How Long to Beat API.
 """
 
+import re
 from howlongtobeatpy import HowLongToBeat as hltb
+
+def clean_game_name(game_name):
+    """
+    Clean the game name by removing Unicode characters, punctuation, and
+    handling parenthetical information at the end of the title.
+
+    Args:
+        game_name (str): The name of the game.
+
+    Returns:
+        str: Cleaned game name.
+    """
+    # Remove Unicode characters and punctuation
+    clean_title = re.sub(r'[^\w\s-]', '', game_name)
+
+    # Remove parenthetical information at the end of the title
+    clean_title = re.sub(r'\([^)]*\)', '', clean_title)
 
 def get_hltb_data(game_name):
     """
@@ -28,8 +46,20 @@ def get_hltb_data(game_name):
     """
     results_list = hltb().search(game_name)
 
+    # try searching a lowercase title if not found
     if not results_list:
         results_list = hltb().search(game_name.lower())
+    
+    # try searching after removing any details about the game edition
+    if not results_list and game_name.split()[-1].lower() == "edition":
+        results_list = hltb().search(game_name.rsplit(' ', 2)[0])
+    
+    # try searching after removing the year from the title
+    if not results_list and bool(re.search(r"\s\(\w+\)$", game_name)):
+        results_list = hltb().search(game_name.rsplit(' ', 1)[0])
+    
+    if not results_list and ':' in game_name:
+        results_list = hltb().search(game_name.split(':')[0])
 
     if len(results_list) > 0:
         best_element = max(results_list, key=lambda element: element.similarity)
