@@ -15,23 +15,6 @@ Dependencies:
 import re
 from howlongtobeatpy import HowLongToBeat as hltb
 
-def clean_game_name(game_name):
-    """
-    Clean the game name by removing Unicode characters, punctuation, and
-    handling parenthetical information at the end of the title.
-
-    Args:
-        game_name (str): The name of the game.
-
-    Returns:
-        str: Cleaned game name.
-    """
-    # Remove Unicode characters and punctuation
-    clean_title = re.sub(r'[^\w\s-]', '', game_name)
-
-    # Remove parenthetical information at the end of the title
-    clean_title = re.sub(r'\([^)]*\)', '', clean_title)
-
 def get_hltb_data(game_name):
     """
     Retrieve How Long to Beat data for a specific game.
