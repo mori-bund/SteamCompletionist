@@ -7,13 +7,12 @@ manage no-achievement game lists, and handle file operations.
 
 Functions:
     - load_existing_appids(steamid): Retrieve existing Steam AppIDs from CSV and text files.
-    - save_to_csv(data, steamid): Save scraped data to CSV file sorted by rarest achievement.
     - save_to_json(data, steamid): Save scraped data to JSON file sorted by rarest achievement.
     - save_appids_without_achievements(appids): Append new appids without achievements to text file.
     - update_no_achievements(appids, num_games, progress_bar): Update no-achievements list.
 
 Dependencies:
-    - csv                   Module for CSV file operations.
+    - json                  Module for JSON file operations.
     - os                    Module for operating system functions.
     - pandas                Library for data manipulation and analysis.
     - api_utils.py          Utility functions for interacting with external APIs.
@@ -26,11 +25,7 @@ import os
 from steam_utils import get_game_achievement_data
 
 DATA_DIR = 'data'
-NO_ACHIEVEMENTS_PATH = os.path.join('src', 'no_achievements.json')
-
-if not os.path.exists(DATA_DIR):
-    os.makedirs(DATA_DIR)
-
+NO_ACHIEVEMENTS_PATH = os.path.join(DATA_DIR, 'no_achievements.json')
 
 def load_existing_appids(steamid):
     """
@@ -104,7 +99,7 @@ def save_appids_without_achievements(appids):
             existing_appids = json.load(jsonfile)
 
     existing_appids.extend(appids)
-    existing_appids = sorted(set(existing_appids))  # Remove duplicates and sort
+    existing_appids = sorted(set(existing_appids))
 
     with open(NO_ACHIEVEMENTS_PATH, 'w', encoding='utf-8') as jsonfile:
         json.dump(existing_appids, jsonfile, indent=4)
