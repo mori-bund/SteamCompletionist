@@ -35,6 +35,7 @@ from file_utils import (
     update_no_achievements
 )
 from steam_utils import get_owned_games, scrape_steam_data, resolve_vanity_url
+from steam_hltb_mapping import add_new_ids_from_users
 from config import STEAM_ID
 
 def resolve_steamid(args):
@@ -86,6 +87,8 @@ def parse_arguments(parser):
                        help='Specify a vanity URL which converts to a SteamID (optional)')
     group.add_argument('-u', '--update-no-achievements',
                        action='store_true', help='Check and update no_achievements.txt')
+    group.add_argument('-m', '--map-update',
+                       action='store_true', help='Update steam_hltb_map.json')
     return parser.parse_args()
 
 def main():
@@ -108,7 +111,7 @@ def main():
     ] if arg
     )
     if num_args_provided > 1:
-        parser.error('Please provide exactly one of -s, -v, or -u.')
+        parser.error('Please provide exactly one of -s, -v, -u, or -m.')
 
     if args.update_no_achievements:
         with open("data/no_achievements.json", 'r', encoding='utf-8') as jsonfile:
@@ -116,6 +119,10 @@ def main():
         num_games = len(appids)
         progress_bar = tqdm(total=num_games, unit='games', ncols=100)
         update_no_achievements(appids, num_games, progress_bar)
+        sys.exit()
+
+    if args.map_update:
+        add_new_ids_from_users()
         sys.exit()
 
     steamid = resolve_steamid(args)

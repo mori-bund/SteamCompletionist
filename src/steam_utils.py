@@ -134,7 +134,7 @@ def scrape_steam_data(steamid, new_games, progress_bar):
             continue
 
         achievements = get_game_achievement_data(appid)
-        hltb_id, hltb_game_name, hltb_completionist_time = get_hltb_data(game_name)
+        hltb_id, hltb_title, hltb_completionist_time = get_hltb_data(game_name)
 
         if achievements is None:
             no_achievements.append(appid)
@@ -151,7 +151,7 @@ def scrape_steam_data(steamid, new_games, progress_bar):
             'Rarest Achievement %': rarest_achievement_percentage,
             'Completed': has_completed,
             'HLTB ID': hltb_id,
-            'HLTB Game Name': hltb_game_name,
+            'HLTB Title': hltb_title,
             'HLTB Completionist Time': hltb_completionist_time
         })
 

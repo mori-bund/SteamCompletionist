@@ -50,7 +50,13 @@ def get_hltb_data(game_name):
         if best_element:
             hltb_id = best_element.game_id
             hltb_game_name = best_element.game_name
-            completionist_time = round(best_element.completionist)
+            times = [
+                best_element.main_story,
+                best_element.main_extra,
+                best_element.completionist,
+                best_element.all_styles,
+            ]
+            completionist_time = round(max(times), 2)
             return int(hltb_id), hltb_game_name, float(completionist_time)
 
     return None, None, None
