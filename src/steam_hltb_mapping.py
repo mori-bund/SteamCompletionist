@@ -56,6 +56,7 @@ def add_new_ids_from_users():
     else:
         print("No new entries added.")
 
+
 def load_existing_ids():
     """
     Load existing Steam IDs from steam_hltb_map.json.
@@ -75,6 +76,7 @@ def load_existing_ids():
 
     return {entry['AppID']: entry for entry in existing_data}
 
+
 def update_steam_hltb_map(new_entries):
     """
     Update steam_hltb_map.json with new entries (AppID, HLTB ID, Title,
@@ -93,13 +95,14 @@ def update_steam_hltb_map(new_entries):
             existing_data = []
 
     existing_data.extend(new_entries)
-    #existing_data.sort(key=lambda x: x['AppID'])
+    existing_data.sort(key=lambda x: x['AppID'])
 
     with open(STEAM_HLTB_MAP_FILE, 'w', encoding='utf-8') as jsonfile:
         json.dump(existing_data, jsonfile, indent=4)
 
     num_entries_added = len(new_entries)
     print(f"Added {num_entries_added} new entries to steam_hltb_map.json.")
+
 
 def list_user_json_files():
     """
@@ -114,3 +117,26 @@ def list_user_json_files():
             if file.startswith("7"):
                 user_json_files.append(os.path.join(root, file))
     return user_json_files
+
+
+def sort_steam_hltb_map():
+    """
+    Sort the steam_hltb_map.json file by AppID.
+    """
+    if not os.path.exists(STEAM_HLTB_MAP_FILE):
+        print("steam_hltb_map.json does not exist.")
+        return
+
+    with open(STEAM_HLTB_MAP_FILE, 'r', encoding='utf-8') as f:
+        try:
+            data = json.load(f)
+        except json.JSONDecodeError:
+            print("steam_hltb_map.json is empty or corrupted.")
+            return
+
+    sorted_data = sorted(data, key=lambda x: x['AppID'])
+
+    with open(STEAM_HLTB_MAP_FILE, 'w', encoding='utf-8') as f:
+        json.dump(sorted_data, f, indent=4)
+
+    print("steam_hltb_map.json has been sorted.")

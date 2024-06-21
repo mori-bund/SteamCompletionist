@@ -36,7 +36,7 @@ from file_utils import (
     update_no_achievements
 )
 from steam_utils import get_owned_games, scrape_steam_data, resolve_vanity_url
-from steam_hltb_mapping import add_new_ids_from_users, load_existing_ids
+from steam_hltb_mapping import add_new_ids_from_users, load_existing_ids, sort_steam_hltb_map
 from config import STEAM_ID
 
 def resolve_steamid(args):
@@ -90,6 +90,7 @@ def parse_arguments(parser):
                        action='store_true', help='Check and update no_achievements.txt')
     group.add_argument('-m', '--map-update',
                        action='store_true', help='Update steam_hltb_map.json')
+    group.add_argument('--sort', action='store_true', help='Sort the steam_hltb_map.json file')
     return parser.parse_args()
 
 def handle_update_no_achievements():
@@ -150,6 +151,7 @@ def main():
     Parses command-line arguments to determine the action to take:
     - If `-u` or `--update-no-achievements` is provided, updates the no_achievements.json file.
     - If `-m` or `--map-update` is provided, updates the steam_hltb_map.json file.
+    - If '--sort` is provided, sort the steam_hltb_map.json file
     - Otherwise, scrapes the Steam user's library for new games, retrieves achievement data,
       and manages the no-achievement game list.
     """
@@ -173,6 +175,9 @@ def main():
     if args.map_update:
         add_new_ids_from_users()
         sys.exit()
+    
+    if args.sort:
+        sort_steam_hltb_map()
 
     steamid = resolve_steamid(args)
     new_games = get_new_games(steamid)
