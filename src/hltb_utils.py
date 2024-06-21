@@ -41,6 +41,11 @@ def get_hltb_data(game_name):
     if not results_list and bool(re.search(r"\s\(\w+\)$", game_name)):
         results_list = hltb().search(game_name.rsplit(' ', 1)[0])
 
+    # try searching without the dash
+    if not results_list and '-' in game_name:
+        results_list = hltb().search(game_name.split('-')[0])
+
+    # try searching without the colon
     if not results_list and ':' in game_name:
         results_list = hltb().search(game_name.split(':')[0])
 
@@ -56,7 +61,7 @@ def get_hltb_data(game_name):
                 best_element.completionist,
                 best_element.all_styles,
             ]
-            completionist_time = round(max(times), 2)
-            return int(hltb_id), hltb_game_name, float(completionist_time)
+            time = round(max(times), 2)
+            return hltb_id, hltb_game_name, None if time == 0.0 else time
 
     return None, None, None
