@@ -127,16 +127,16 @@ def sort_steam_hltb_map():
         print("steam_hltb_map.json does not exist.")
         return
 
-    with open(STEAM_HLTB_MAP_FILE, 'r', encoding='utf-8') as f:
+    with open(STEAM_HLTB_MAP_FILE, 'r', encoding='utf-8') as jsonfile:
         try:
-            data = json.load(f)
+            data = json.load(jsonfile)
         except json.JSONDecodeError:
             print("steam_hltb_map.json is empty or corrupted.")
             return
 
     sorted_data = sorted(data, key=lambda x: x['AppID'])
 
-    with open(STEAM_HLTB_MAP_FILE, 'w', encoding='utf-8') as f:
-        json.dump(sorted_data, f, indent=4)
+    with open(STEAM_HLTB_MAP_FILE, 'w', encoding='utf-8') as jsonfile:
+        json.dump(sorted_data, jsonfile, indent=4)
 
     print("steam_hltb_map.json has been sorted.")
