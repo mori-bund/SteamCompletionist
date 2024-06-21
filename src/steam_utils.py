@@ -110,7 +110,7 @@ def player_has_completed(steamid, appid):
     return all(achievement.get('achieved', False) for achievement in achievements)
 
 
-def scrape_steam_data(steamid, new_games, progress_bar):
+def scrape_steam_data(steamid, new_games, progress_bar, existing_data):
     """
     Scrape data for each game in a user's library to get the appid, title,
     rarest achievement, and completion status.
@@ -133,8 +133,15 @@ def scrape_steam_data(steamid, new_games, progress_bar):
             progress_bar.update(1)
             continue
 
+        hltb_data = existing_data.get(appid, {})
+        if not hltb_data:
+            hltb_id, hltb_title, hltb_completionist_time = get_hltb_data(game_name)
+        else:
+            hltb_id = hltb_data.get('HLTB ID')
+            hltb_title = hltb_data.get('HLTB Title')
+            hltb_completionist_time = hltb_data.get('HLTB Completionist Time')
+
         achievements = get_game_achievement_data(appid)
-        hltb_id, hltb_title, hltb_completionist_time = get_hltb_data(game_name)
 
         if achievements is None:
             no_achievements.append(appid)
@@ -142,7 +149,6 @@ def scrape_steam_data(steamid, new_games, progress_bar):
             continue
 
         rarest_achievement_percentage = get_rarest_achievement_percentage(achievements)
-
         has_completed = player_has_completed(steamid, appid)
 
         scraped_data.append({

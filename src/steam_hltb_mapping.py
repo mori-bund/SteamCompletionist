@@ -73,7 +73,7 @@ def load_existing_ids():
         except json.JSONDecodeError:
             existing_data = []
 
-    return [entry['AppID'] for entry in existing_data]
+    return {entry['AppID']: entry for entry in existing_data}
 
 def update_steam_hltb_map(new_entries):
     """

@@ -68,7 +68,6 @@ def save_to_json(data, steamid):
         steamid (str): The SteamID of the user.
     """
     json_filename = os.path.join(DATA_DIR, f"{steamid}.json")
-
     existing_data = []
 
     if os.path.isfile(json_filename):
