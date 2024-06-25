@@ -123,4 +123,4 @@ def update_no_achievements(appids, num_games, progress_bar):
     with open(NO_ACHIEVEMENTS_PATH, 'w', encoding='utf-8') as jsonfile:
         json.dump(updated_appids, jsonfile, indent=4)
 
-    print(f"Removed {num_games} appid(s) that now have achievements.")
+    print(f"\nRemoved {num_games} appid(s) that now have achievements.")
