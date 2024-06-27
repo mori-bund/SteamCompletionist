@@ -6,7 +6,6 @@ config.py
 
 # contents of the data directory
 data/*
-
 # Except for these specific files
 !data/no_achievements.json
 !data/steam_hltb_map.json
