@@ -21,7 +21,6 @@ Dependencies:
 """
 
 import sys
-import re
 import requests
 from steam.webapi import WebAPI
 from steam import steamid as sid

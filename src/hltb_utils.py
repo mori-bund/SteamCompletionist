@@ -29,7 +29,12 @@ def get_hltb_data(game_name):
     """
     results_list = hltb().search(game_name)
 
-    # try searching a lowercase title if not found
+    # try stripping the unicode characters if nothing found
+    if not results_list:
+        game_name = re.sub(r'[^\x00-\x7F]+', '', game_name)
+        results_list = hltb().search(game_name)
+
+    # try searching a lowercase title if nothing found
     if not results_list:
         results_list = hltb().search(game_name.lower())
 
