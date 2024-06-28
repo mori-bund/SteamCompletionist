@@ -14,6 +14,7 @@ Options:
     -u, --update-no-achievements
                             Check and update no_achievements.json.
     -m, --map-update        Pull info from user files to update steam/hltb map.
+    --sort                  Sort the steam_hltb_map.json file.
 
 If no options are provided, it uses STEAM_ID from config.py.
 
@@ -152,7 +153,7 @@ def main():
     Parses command-line arguments to determine the action to take:
     - If `-u` or `--update-no-achievements` is provided, updates the no_achievements.json file.
     - If `-m` or `--map-update` is provided, updates the steam_hltb_map.json file.
-    - If '--sort` is provided, sort the steam_hltb_map.json file
+    - If '--sort' is provided, sorts the steam_hltb_map.json file.
     - Otherwise, scrapes the Steam user's library for new games, retrieves achievement data,
       and manages the no-achievement game list.
     """
