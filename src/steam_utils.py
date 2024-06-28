@@ -10,7 +10,7 @@ Functions:
     - get_game_achievement_data(appid): Retrieve achievement data for a specific game.
     - get_rarest_achievement_percentage(data): Get the percentage of the rarest achievement.
     - player_has_completed(steamid, appid): Check if a user has completed all achievements.
-    - scrape_steam_data(steamid, new_games, progress_bar): Scrape data for owned games.
+    - scrape_steam_data(steamid, game, progress_bar, existing_data): Scrape data for a single game.
     - resolve_vanity_url(vanity): Resolve a Steam vanity URL to a SteamID.
 
 Dependencies:
@@ -58,7 +58,7 @@ def get_game_achievement_data(appid):
 
     Returns:
         list or None: A list of achievement data dictionaries for the game,
-        or None if there are none.
+                      or None if there are none.
     """
     try:
         achievement_data = api.ISteamUserStats.GetGlobalAchievementPercentagesForApp(
@@ -116,7 +116,8 @@ def scrape_steam_data(steamid, game, progress_bar, existing_data):
 
     Args:
         steamid (str): The SteamID of the user.
-        game (dict): Dictionary containing game data
+        game (dict): Dictionary containing game data.
+        progress_bar (object): A progress bar object to update.
         existing_data (dict): Existing mapping data for appids to HLTB data.
 
     Returns:
