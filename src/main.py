@@ -136,7 +136,7 @@ def scrape_and_save_data(steamid, new_games):
     for game in new_games:
         try:
             scraped_data, no_achievements = scrape_steam_data(
-                steamid, [game], progress_bar, steam_hltb_data)
+                steamid, game, progress_bar, steam_hltb_data)
             save_to_json(scraped_data, steamid)
             save_appids_without_achievements(no_achievements)
         except Exception as error:

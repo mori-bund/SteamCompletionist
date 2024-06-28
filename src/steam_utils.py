@@ -110,58 +110,57 @@ def player_has_completed(steamid, appid):
     return all(achievement.get('achieved', False) for achievement in achievements)
 
 
-def scrape_steam_data(steamid, new_games, progress_bar, existing_data):
+def scrape_steam_data(steamid, game, progress_bar, existing_data):
     """
-    Scrape data for each game in a user's library to get the appid, title,
+    Scrape data for a game in a user's library to get the appid, title,
     rarest achievement, and completion status.
 
     Args:
         steamid (str): The SteamID of the user.
-        new_games (list): List of games owned by the user that haven't been scraped yet.
-        progress_bar (tqdm.tqdm): Progress bar for tracking progress.
+        game (dict): Dictionary containing game data
+        existing_data (dict): Existing mapping data for appids to HLTB data.
 
     Returns:
         tuple: A tuple containing a list of scraped data and a list of appids with no achievements.
     """
     scraped_data, no_achievements = [], []
 
-    for game in new_games:
-        appid = game['appid']
-        game_name = re.sub(r'[^\x00-\x7F]+', '', game['name'].strip())
+    appid = game['appid']
+    game_name = game['name'].strip()
 
-        if game_name is False:
-            progress_bar.update(1)
-            continue
-
-        hltb_data = existing_data.get(appid, {})
-        if not hltb_data:
-            hltb_id, hltb_title, hltb_completionist_time = get_hltb_data(game_name)
-        else:
-            hltb_id = hltb_data.get('HLTB ID')
-            hltb_title = hltb_data.get('HLTB Title')
-            hltb_completionist_time = hltb_data.get('HLTB Completionist Time')
-
-        achievements = get_game_achievement_data(appid)
-
-        if achievements is None:
-            no_achievements.append(appid)
-            progress_bar.update(1)
-            continue
-
-        rarest_achievement_percentage = get_rarest_achievement_percentage(achievements)
-        has_completed = player_has_completed(steamid, appid)
-
-        scraped_data.append({
-            'AppID': appid,
-            'Title': game_name,
-            'Rarest Achievement %': rarest_achievement_percentage,
-            'Completed': has_completed,
-            'HLTB ID': hltb_id,
-            'HLTB Title': hltb_title,
-            'HLTB Completionist Time': hltb_completionist_time
-        })
-
+    if game_name is False:
         progress_bar.update(1)
+        return scraped_data, no_achievements
+
+    hltb_data = existing_data.get(appid, {})
+    if not hltb_data:
+        hltb_id, hltb_title, hltb_completionist_time = get_hltb_data(game_name)
+    else:
+        hltb_id = hltb_data.get('HLTB ID')
+        hltb_title = hltb_data.get('HLTB Title')
+        hltb_completionist_time = hltb_data.get('HLTB Completionist Time')
+
+    achievements = get_game_achievement_data(appid)
+
+    if achievements is None:
+        no_achievements.append(appid)
+        progress_bar.update(1)
+        return scraped_data, no_achievements
+
+    rarest_achievement_percentage = get_rarest_achievement_percentage(achievements)
+    has_completed = player_has_completed(steamid, appid)
+
+    scraped_data.append({
+        'AppID': appid,
+        'Title': game_name,
+        'Rarest Achievement %': rarest_achievement_percentage,
+        'Completed': has_completed,
+        'HLTB ID': hltb_id,
+        'HLTB Title': hltb_title,
+        'HLTB Completionist Time': hltb_completionist_time
+    })
+
+    progress_bar.update(1)
 
     return scraped_data, sorted(no_achievements)
 
