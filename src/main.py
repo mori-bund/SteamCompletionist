@@ -133,15 +133,16 @@ def scrape_and_save_data(steamid, new_games):
     """
     steam_hltb_data = load_existing_ids()
     progress_bar = tqdm(total=len(new_games), unit='games', ncols=100)
-    try:
-        scraped_data, no_achievements = scrape_steam_data(
-            steamid, new_games, progress_bar, steam_hltb_data)
-    except Exception as error:
-        print(f"Error scraping data: {error}")
-        sys.exit(1)
-
-    save_to_json(scraped_data, steamid)
-    save_appids_without_achievements(no_achievements)
+    for game in new_games:
+        try:
+            scraped_data, no_achievements = scrape_steam_data(
+                steamid, [game], progress_bar, steam_hltb_data)
+            save_to_json(scraped_data, steamid)
+            save_appids_without_achievements(no_achievements)
+        except Exception as error:
+            game_info = f"AppID: {game.get('appid')}, Title: {game.get('name')}"
+            print(f"\nError scraping data for {game_info}: {error}")
+            continue
     progress_bar.close()
 
 def main():
