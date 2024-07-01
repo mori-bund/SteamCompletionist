@@ -95,7 +95,6 @@ def update_steam_hltb_map(new_entries):
             existing_data = []
 
     existing_data.extend(new_entries)
-    existing_data.sort(key=lambda x: x['AppID'])
 
     with open(STEAM_HLTB_MAP_FILE, 'w', encoding='utf-8') as jsonfile:
         json.dump(existing_data, jsonfile, indent=4)
