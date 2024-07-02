@@ -180,6 +180,7 @@ def main():
 
     if args.sort:
         sort_steam_hltb_map()
+        sys.exit()
 
     steamid = resolve_steamid(args)
     new_games = get_new_games(steamid)
