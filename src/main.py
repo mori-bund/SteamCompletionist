@@ -185,7 +185,7 @@ def main():
         add_new_ids_from_users()
         sys.exit()
 
-    if args.sort:
+    if args.sort-map:
         sort_steam_hltb_map()
         sys.exit()
 
