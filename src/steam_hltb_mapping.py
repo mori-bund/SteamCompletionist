@@ -16,6 +16,8 @@ Example Usage:
 """
 import os
 import json
+from tqdm import tqdm
+from steam_utils import get_game_achievement_data, get_rarest_achievement_percentage
 
 DATA_DIR = 'data'
 STEAM_HLTB_MAP_FILE = os.path.join(DATA_DIR, 'steam_hltb_map.json')
@@ -140,3 +142,34 @@ def sort_steam_hltb_map():
         json.dump(sorted_data, jsonfile, indent=4)
 
     print("steam_hltb_map.json has been sorted.")
+
+
+def update_rarest_achievement_percentages():
+    """
+    Update the Rarest Achievement % for each game in steam_hltb_map.json
+    with a progress bar.
+    """
+    with open(STEAM_HLTB_MAP_FILE, 'r', encoding='utf-8') as jsonfile:
+        try:
+            data = json.load(jsonfile)
+        except json.JSONDecodeError:
+            print("steam_hltb_map.json is empty or corrupted.")
+            return
+
+    num_entries = len(data)
+    progress_bar = tqdm(total=num_entries, desc="Updating Rarest Achievements", unit="game", ncols=100)
+    
+    for entry in data:
+        appid = entry.get('AppID')
+        if appid:
+            achievements = get_game_achievement_data(appid)
+            if achievements:
+                entry['Rarest Achievement %'] = get_rarest_achievement_percentage(achievements)
+        progress_bar.update(1)
+
+    progress_bar.close()
+
+    with open(STEAM_HLTB_MAP_FILE, 'w', encoding='utf-8') as jsonfile:
+        json.dump(data, jsonfile, indent=4)
+
+    print("Updated Rarest Achievement % for all games in steam_hltb_map.json.")
