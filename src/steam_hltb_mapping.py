@@ -100,7 +100,8 @@ def update_steam_hltb_map(new_entries):
         json.dump(existing_data, jsonfile, indent=4)
 
     num_entries_added = len(new_entries)
-    print(f"Added {num_entries_added} new entries to steam_hltb_map.json.")
+    entry_word = "entry" if num_entries_added == 1 else "entries"
+    print(f"Added {num_entries_added} new {entry_word} to steam_hltb_map.json.")
 
 
 def list_user_json_files():
