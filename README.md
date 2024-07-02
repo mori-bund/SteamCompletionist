@@ -32,7 +32,7 @@ To use the script, follow these steps:
 3. Set up your Steam API Key:
 
    - Obtain your API Key from the [Steam Developer website](https://steamcommunity.com/dev/apikey) if you don't already have one.
-   - Remove the underscore from the `con_fig.py` filename in the project directory.
+   - Rename `con_fig.py` to `config.py` in the project directory (remove the underscore).
    - Add your API Key and [Steam ID](https://help.steampowered.com/en/faqs/view/2816-BE67-5B69-0FEC) to the `config.py` file:
 
      ```python
@@ -44,12 +44,15 @@ To use the script, follow these steps:
 4. Run the script:
 
    ```shell
-   python src/main.py [-s STEAMID] [-v VANITY] [-u]
+   python src/main.py [-s STEAMID] [-v VANITY] [-u] [-m] [-r] [-p]
    ```
 
    - Use the `-s` option to specify a SteamID to scrape (optional). This will scrape it instead of the one in your `config.py` file.
    - Use the `-v` option to specify a Steam Vanity URL to scrape (optional). This will resolve the vanity url to a SteamID and scrape that library instead of the one in your `config.py` file.
    - Use the `-u` option to check and update the list of games with no achievements (optional). Any scanned game that doesn't have achievements is added to the `no_achievements.txt` file so the scraper knows to not bother checking those. This options rescans this list and removes the appID of any game that now has achievements. 
+   - Use the `-m` option to update the `steam_hltb_map.json` file with new Steam IDs from user JSON files.
+   - Use the `-r` option to sort the `steam_hltb_map.json` file by AppID.
+   - Use the `-p` option to update the rarest achievement percentage for every game in `steam_hltb_map.json`
 
 ## Output
 
