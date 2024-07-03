@@ -100,7 +100,7 @@ def parse_arguments(parser):
     group.add_argument('-r', '--sort-map', action='store_true',
                        help='Sort the steam_hltb_map.json file')
     group.add_argument('-p', '--update-rarest', action='store_true',
-                       help='Update the Rarest Achievement % for all games')
+                       help='Update the Rarest Achievement %% for all games')
     group.add_argument('-d', '--update-hltb', action='store_true',
                        help='Update the HLTB Completionist Time for all games')
     return parser.parse_args()
