@@ -9024,6 +9024,14 @@
         "HLTB Completionist Time": 3.53
     },
     {
+        "AppID": 253710,
+        "Title": "theHunter Classic",
+        "Rarest Achievement %": "0.1",
+        "HLTB ID": 94575,
+        "HLTB Title": "theHunter Classic",
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 253750,
         "Title": "Ikaruga",
         "Rarest Achievement %": "0.3",
@@ -15928,6 +15936,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 312280,
+        "Title": "Simply Chess",
+        "Rarest Achievement %": "0.9",
+        "HLTB ID": 30436,
+        "HLTB Title": "Simply Chess",
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 312430,
         "Title": "Sovereignty: Crown of Kings",
         "Rarest Achievement %": "0.2",
@@ -18648,6 +18664,14 @@
         "HLTB Completionist Time": 9.9
     },
     {
+        "AppID": 332950,
+        "Title": "Dark Deception",
+        "Rarest Achievement %": "0.5",
+        "HLTB ID": 61858,
+        "HLTB Title": "Dark Deception",
+        "HLTB Completionist Time": 17.08
+    },
+    {
         "AppID": 333120,
         "Title": "Inside The Gear",
         "Rarest Achievement %": "3.5",
@@ -18726,6 +18750,14 @@
         "HLTB ID": 34783,
         "HLTB Title": "Slow Down, Bull",
         "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 333640,
+        "Title": "Caves of Qud",
+        "Rarest Achievement %": "0.0",
+        "HLTB ID": 28067,
+        "HLTB Title": "Caves of Qud",
+        "HLTB Completionist Time": 46.68
     },
     {
         "AppID": 333650,
@@ -21598,6 +21630,14 @@
         "HLTB ID": 30261,
         "HLTB Title": "Planet of the Eyes",
         "HLTB Completionist Time": 1.67
+    },
+    {
+        "AppID": 351030,
+        "Title": "Pixel Puzzles Ultimate",
+        "Rarest Achievement %": "0.0",
+        "HLTB ID": 39543,
+        "HLTB Title": "Pixel Puzzles Ultimate",
+        "HLTB Completionist Time": 929.0
     },
     {
         "AppID": 351090,
@@ -35472,6 +35512,14 @@
         "HLTB Completionist Time": 2.42
     },
     {
+        "AppID": 454650,
+        "Title": "DRAGON BALL XENOVERSE 2",
+        "Rarest Achievement %": "0.8",
+        "HLTB ID": 40860,
+        "HLTB Title": "Dragon Ball Xenoverse 2",
+        "HLTB Completionist Time": 100.25
+    },
+    {
         "AppID": 454730,
         "Title": "World Of Undead",
         "Rarest Achievement %": "3.6",
@@ -47400,6 +47448,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 613830,
+        "Title": "CHRONO TRIGGER",
+        "Rarest Achievement %": "2.2",
+        "HLTB ID": 1705,
+        "HLTB Title": "Chrono Trigger",
+        "HLTB Completionist Time": 41.98
+    },
+    {
         "AppID": 614090,
         "Title": "Deadbeat Heroes",
         "Rarest Achievement %": "3.7",
@@ -49254,6 +49310,14 @@
         "HLTB ID": 68545,
         "HLTB Title": "BFF or Die",
         "HLTB Completionist Time": 5.0
+    },
+    {
+        "AppID": 652410,
+        "Title": "Brigand: Oaxaca",
+        "Rarest Achievement %": "0.1",
+        "HLTB ID": 59740,
+        "HLTB Title": "Brigand: Oaxaca",
+        "HLTB Completionist Time": 24.75
     },
     {
         "AppID": 652550,
@@ -51942,6 +52006,14 @@
         "HLTB ID": 71389,
         "HLTB Title": "Trident's Wake",
         "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 704920,
+        "Title": "Magic Rampage",
+        "Rarest Achievement %": "0.7",
+        "HLTB ID": 94799,
+        "HLTB Title": "Magic Rampage",
+        "HLTB Completionist Time": 45.0
     },
     {
         "AppID": 704990,
@@ -54760,6 +54832,14 @@
         "HLTB Completionist Time": 200.0
     },
     {
+        "AppID": 774171,
+        "Title": "Muse Dash",
+        "Rarest Achievement %": "1.3",
+        "HLTB ID": 66633,
+        "HLTB Title": "Muse Dash",
+        "HLTB Completionist Time": 20.85
+    },
+    {
         "AppID": 774201,
         "Title": "Heaven's Vault",
         "Rarest Achievement %": "3.7",
@@ -55510,6 +55590,14 @@
         "HLTB ID": 60259,
         "HLTB Title": "7 Billion Humans",
         "HLTB Completionist Time": 22.44
+    },
+    {
+        "AppID": 792220,
+        "Title": "Paunch",
+        "Rarest Achievement %": "0.8",
+        "HLTB ID": 73034,
+        "HLTB Title": "Paunch",
+        "HLTB Completionist Time": null
     },
     {
         "AppID": 792300,
@@ -57496,6 +57584,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 848450,
+        "Title": "Subnautica: Below Zero",
+        "Rarest Achievement %": "18.8",
+        "HLTB ID": 64768,
+        "HLTB Title": "Subnautica: Below Zero",
+        "HLTB Completionist Time": 31.41
+    },
+    {
         "AppID": 848480,
         "Title": "Creeper World 4",
         "Rarest Achievement %": "11.4",
@@ -58224,6 +58320,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 865680,
+        "Title": "The Eternal Cylinder",
+        "Rarest Achievement %": "1.7",
+        "HLTB ID": 80034,
+        "HLTB Title": "The Eternal Cylinder",
+        "HLTB Completionist Time": 22.06
+    },
+    {
         "AppID": 865720,
         "Title": "Torn Tales: Rebound Edition",
         "Rarest Achievement %": "2.5",
@@ -58376,6 +58480,14 @@
         "HLTB Completionist Time": 7.75
     },
     {
+        "AppID": 869760,
+        "Title": "Stoneshard: Prologue",
+        "Rarest Achievement %": "4.0",
+        "HLTB ID": 57261,
+        "HLTB Title": "Stoneshard: Prologue",
+        "HLTB Completionist Time": 5.91
+    },
+    {
         "AppID": 870000,
         "Title": "AmazeD 3D",
         "Rarest Achievement %": "21.9",
@@ -58446,6 +58558,14 @@
         "HLTB ID": 59346,
         "HLTB Title": "Freezeer",
         "HLTB Completionist Time": 0.42
+    },
+    {
+        "AppID": 872200,
+        "Title": "Rogue Company",
+        "Rarest Achievement %": "15.1",
+        "HLTB ID": 70213,
+        "HLTB Title": "Rogue Company",
+        "HLTB Completionist Time": 33.25
     },
     {
         "AppID": 872730,
@@ -59816,6 +59936,14 @@
         "HLTB Completionist Time": 87.2
     },
     {
+        "AppID": 920680,
+        "Title": "Fate Hunters",
+        "Rarest Achievement %": "8.8",
+        "HLTB ID": 62965,
+        "HLTB Title": "Fate Hunters",
+        "HLTB Completionist Time": 21.0
+    },
+    {
         "AppID": 920700,
         "Title": "Piano Bar",
         "Rarest Achievement %": "12.7",
@@ -61000,6 +61128,14 @@
         "HLTB Completionist Time": 3.2
     },
     {
+        "AppID": 962130,
+        "Title": "Grounded",
+        "Rarest Achievement %": "0.1",
+        "HLTB ID": 77857,
+        "HLTB Title": "Grounded",
+        "HLTB Completionist Time": 92.76
+    },
+    {
         "AppID": 962580,
         "Title": "Summer in Mara",
         "Rarest Achievement %": "4.3",
@@ -61560,6 +61696,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 977490,
+        "Title": "Jigsaw Masterpieces",
+        "Rarest Achievement %": "10.0",
+        "HLTB ID": 66202,
+        "HLTB Title": "Jigsaw Masterpieces",
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 977650,
         "Title": "DwarfHeim",
         "Rarest Achievement %": "0.2",
@@ -62006,6 +62150,14 @@
         "HLTB ID": 122954,
         "HLTB Title": "Marvel's Avengers - Hero Event: The Mighty Thor",
         "HLTB Completionist Time": 8.09
+    },
+    {
+        "AppID": 998340,
+        "Title": "DragonFang - Drahn's Mystery Dungeon",
+        "Rarest Achievement %": "5.4",
+        "HLTB ID": 77910,
+        "HLTB Title": "DragonFang - Drahn's Mystery Dungeon",
+        "HLTB Completionist Time": 41.33
     },
     {
         "AppID": 998740,
@@ -62944,6 +63096,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 1036950,
+        "Title": "Super Jigsaw Puzzle: Generations",
+        "Rarest Achievement %": "4.1",
+        "HLTB ID": 72196,
+        "HLTB Title": "Super Jigsaw Puzzle: Generations",
+        "HLTB Completionist Time": 3.2
+    },
+    {
         "AppID": 1037020,
         "Title": "ScourgeBringer",
         "Rarest Achievement %": "1.1",
@@ -63238,6 +63398,14 @@
         "HLTB ID": 93066,
         "HLTB Title": "Astalon: Tears of the Earth",
         "HLTB Completionist Time": 19.96
+    },
+    {
+        "AppID": 1046470,
+        "Title": "Deep the Game",
+        "Rarest Achievement %": "1.4",
+        "HLTB ID": 77809,
+        "HLTB Title": "Deep The Game",
+        "HLTB Completionist Time": 2.4
     },
     {
         "AppID": 1046790,
@@ -65000,6 +65168,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 1121680,
+        "Title": "Remnants",
+        "Rarest Achievement %": "4.7",
+        "HLTB ID": 80250,
+        "HLTB Title": "Remnants",
+        "HLTB Completionist Time": 0.83
+    },
+    {
         "AppID": 1123030,
         "Title": "WHO IS AWESOME",
         "Rarest Achievement %": "15.9",
@@ -66728,6 +66904,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 1193760,
+        "Title": "WarriOrb: Prologue",
+        "Rarest Achievement %": "1.4",
+        "HLTB ID": 106307,
+        "HLTB Title": "WarriOrb: Prologue",
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 1194250,
         "Title": "Screaming Chicken: Ultimate Showdown",
         "Rarest Achievement %": "0.9",
@@ -66886,6 +67070,22 @@
         "HLTB ID": 77796,
         "HLTB Title": "Mad Experiments: Escape Room",
         "HLTB Completionist Time": 2.88
+    },
+    {
+        "AppID": 1201760,
+        "Title": "Kari",
+        "Rarest Achievement %": "3.8",
+        "HLTB ID": 93553,
+        "HLTB Title": "Kari",
+        "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 1201830,
+        "Title": "For The Warp",
+        "Rarest Achievement %": "1.7",
+        "HLTB ID": 86608,
+        "HLTB Title": "For The Warp",
+        "HLTB Completionist Time": null
     },
     {
         "AppID": 1202130,
@@ -67448,6 +67648,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 1231590,
+        "Title": "Isle of Ewe",
+        "Rarest Achievement %": "0.9",
+        "HLTB ID": 85439,
+        "HLTB Title": "Isle of Ewe",
+        "HLTB Completionist Time": 1.77
+    },
+    {
         "AppID": 1231880,
         "Title": "Haiku, the Robot",
         "Rarest Achievement %": "5.1",
@@ -67542,6 +67750,14 @@
         "HLTB ID": 87872,
         "HLTB Title": "Akiba's Trip: Hellbound & Debriefed",
         "HLTB Completionist Time": 34.24
+    },
+    {
+        "AppID": 1237320,
+        "Title": "Sonic Frontiers",
+        "Rarest Achievement %": "14.0",
+        "HLTB ID": 101251,
+        "HLTB Title": "Sonic Frontiers",
+        "HLTB Completionist Time": 26.37
     },
     {
         "AppID": 1237950,
@@ -67896,6 +68112,22 @@
         "HLTB Completionist Time": 11.52
     },
     {
+        "AppID": 1254120,
+        "Title": "Bless Unleashed",
+        "Rarest Achievement %": "0.4",
+        "HLTB ID": 85400,
+        "HLTB Title": "Bless Unleashed",
+        "HLTB Completionist Time": 1477.23
+    },
+    {
+        "AppID": 1255550,
+        "Title": "Strange Creatures",
+        "Rarest Achievement %": "11.4",
+        "HLTB ID": 95871,
+        "HLTB Title": "Strange Creatures",
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 1255630,
         "Title": "WWE 2K22",
         "Rarest Achievement %": "0.6",
@@ -68054,6 +68286,14 @@
         "HLTB ID": 87185,
         "HLTB Title": "Love & Sex: Second Base",
         "HLTB Completionist Time": 23.9
+    },
+    {
+        "AppID": 1264740,
+        "Title": "Lucid Dream",
+        "Rarest Achievement %": "10.6",
+        "HLTB ID": 85861,
+        "HLTB Title": "Lucid Dream",
+        "HLTB Completionist Time": 1.07
     },
     {
         "AppID": 1264970,
@@ -68318,6 +68558,14 @@
         "HLTB ID": 83173,
         "HLTB Title": "Breakpoint",
         "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 1274570,
+        "Title": "DEVOUR",
+        "Rarest Achievement %": "0.0",
+        "HLTB ID": 88751,
+        "HLTB Title": "Devour",
+        "HLTB Completionist Time": 108.67
     },
     {
         "AppID": 1274600,
@@ -68616,6 +68864,14 @@
         "HLTB Completionist Time": 5.96
     },
     {
+        "AppID": 1288930,
+        "Title": "Hargrave",
+        "Rarest Achievement %": "2.2",
+        "HLTB ID": 102860,
+        "HLTB Title": "Hargrave",
+        "HLTB Completionist Time": 3.2
+    },
+    {
         "AppID": 1289310,
         "Title": "Helltaker",
         "Rarest Achievement %": "9.8",
@@ -68888,6 +69144,14 @@
         "HLTB Completionist Time": 393.73
     },
     {
+        "AppID": 1301720,
+        "Title": "Escape Room - The Sick Colleague",
+        "Rarest Achievement %": "0.7",
+        "HLTB ID": 89663,
+        "HLTB Title": "Escape Room: The Sick Colleague",
+        "HLTB Completionist Time": 2.7
+    },
+    {
         "AppID": 1302780,
         "Title": "Zombo Buster Advance",
         "Rarest Achievement %": "10.6",
@@ -68950,6 +69214,14 @@
         "HLTB ID": 81571,
         "HLTB Title": "Drox Operative 2",
         "HLTB Completionist Time": 42.5
+    },
+    {
+        "AppID": 1305730,
+        "Title": "Way To Yaatra",
+        "Rarest Achievement %": "5.2",
+        "HLTB ID": 90821,
+        "HLTB Title": "Way to Yaatra",
+        "HLTB Completionist Time": null
     },
     {
         "AppID": 1306630,
@@ -69280,6 +69552,14 @@
         "HLTB Completionist Time": 5.5
     },
     {
+        "AppID": 1333920,
+        "Title": "A Place, Forbidden",
+        "Rarest Achievement %": "5.6",
+        "HLTB ID": 78350,
+        "HLTB Title": "A Place, Forbidden",
+        "HLTB Completionist Time": 2.33
+    },
+    {
         "AppID": 1334730,
         "Title": "Dread Templar",
         "Rarest Achievement %": "0.7",
@@ -69398,6 +69678,14 @@
         "HLTB ID": 89836,
         "HLTB Title": "Mr. Prepper: Prologue",
         "HLTB Completionist Time": 2.83
+    },
+    {
+        "AppID": 1341290,
+        "Title": "We Were Here Forever",
+        "Rarest Achievement %": "27.9",
+        "HLTB ID": 91902,
+        "HLTB Title": "We Were Here Forever",
+        "HLTB Completionist Time": 13.52
     },
     {
         "AppID": 1341400,
@@ -70000,6 +70288,14 @@
         "HLTB Completionist Time": 17.65
     },
     {
+        "AppID": 1384160,
+        "Title": "GUILTY GEAR -STRIVE-",
+        "Rarest Achievement %": "1.8",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 1384770,
         "Title": "Scrutinized",
         "Rarest Achievement %": "0.4",
@@ -70072,6 +70368,22 @@
         "HLTB Completionist Time": 39.2
     },
     {
+        "AppID": 1389160,
+        "Title": "Dark Fracture: Prologue",
+        "Rarest Achievement %": "1.4",
+        "HLTB ID": 82202,
+        "HLTB Title": "Dark Fracture: Prologue",
+        "HLTB Completionist Time": 0.95
+    },
+    {
+        "AppID": 1389300,
+        "Title": "Soulcaster",
+        "Rarest Achievement %": "6.8",
+        "HLTB ID": 83476,
+        "HLTB Title": "Soulcaster",
+        "HLTB Completionist Time": 0.62
+    },
+    {
         "AppID": 1389360,
         "Title": "Mech Armada",
         "Rarest Achievement %": "0.3",
@@ -70086,6 +70398,14 @@
         "HLTB ID": 91583,
         "HLTB Title": "Mind Scanners",
         "HLTB Completionist Time": 12.65
+    },
+    {
+        "AppID": 1389630,
+        "Title": "High Entropy: Challenges",
+        "Rarest Achievement %": "3.8",
+        "HLTB ID": 83622,
+        "HLTB Title": "High Entropy: Challenges",
+        "HLTB Completionist Time": 6.81
     },
     {
         "AppID": 1390010,
@@ -70198,6 +70518,14 @@
         "HLTB ID": 103616,
         "HLTB Title": "Beholgar",
         "HLTB Completionist Time": 8.85
+    },
+    {
+        "AppID": 1399780,
+        "Title": "Spellbreak",
+        "Rarest Achievement %": "0.6",
+        "HLTB ID": 67805,
+        "HLTB Title": "Spellbreak",
+        "HLTB Completionist Time": 4.5
     },
     {
         "AppID": 1401400,
@@ -70360,6 +70688,22 @@
         "HLTB Completionist Time": 41.9
     },
     {
+        "AppID": 1410830,
+        "Title": "Curse That Magic Cat!",
+        "Rarest Achievement %": "2.2",
+        "HLTB ID": 100335,
+        "HLTB Title": "Curse That Magic Cat!",
+        "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 1410870,
+        "Title": "Trikaya",
+        "Rarest Achievement %": "23.5",
+        "HLTB ID": 89492,
+        "HLTB Title": "Trikaya",
+        "HLTB Completionist Time": 0.57
+    },
+    {
         "AppID": 1411740,
         "Title": "Urbek City Builder",
         "Rarest Achievement %": "0.2",
@@ -70422,6 +70766,14 @@
         "HLTB ID": 98586,
         "HLTB Title": "Nickelodeon All-Star Brawl",
         "HLTB Completionist Time": 9.13
+    },
+    {
+        "AppID": 1416130,
+        "Title": "Perfect Vermin",
+        "Rarest Achievement %": "3.0",
+        "HLTB ID": 82707,
+        "HLTB Title": "Perfect Vermin",
+        "HLTB Completionist Time": 1.93
     },
     {
         "AppID": 1419160,
@@ -70494,6 +70846,14 @@
         "HLTB ID": 89154,
         "HLTB Title": "Wobbledogs",
         "HLTB Completionist Time": 22.25
+    },
+    {
+        "AppID": 1424520,
+        "Title": "Astria",
+        "Rarest Achievement %": "8.7",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
     },
     {
         "AppID": 1424600,
@@ -70632,6 +70992,14 @@
         "HLTB Completionist Time": 8.55
     },
     {
+        "AppID": 1435310,
+        "Title": "Shotgun Witch",
+        "Rarest Achievement %": "22.2",
+        "HLTB ID": 84431,
+        "HLTB Title": "Shotgun Witch",
+        "HLTB Completionist Time": 0.47
+    },
+    {
         "AppID": 1435670,
         "Title": "Song of Farca",
         "Rarest Achievement %": "1.6",
@@ -70662,6 +71030,14 @@
         "HLTB ID": 127835,
         "HLTB Title": "Stellar Monarch 2",
         "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 1438440,
+        "Title": "Aurora",
+        "Rarest Achievement %": "40.2",
+        "HLTB ID": 98284,
+        "HLTB Title": "Aurora: A Child's Journey",
+        "HLTB Completionist Time": 0.31
     },
     {
         "AppID": 1440010,
@@ -70712,6 +71088,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 1444110,
+        "Title": "Summerland",
+        "Rarest Achievement %": "22.8",
+        "HLTB ID": 86115,
+        "HLTB Title": "Summerland",
+        "HLTB Completionist Time": 1.9
+    },
+    {
         "AppID": 1444300,
         "Title": "Teacup",
         "Rarest Achievement %": "47.7",
@@ -70726,6 +71110,14 @@
         "HLTB ID": 55537,
         "HLTB Title": "House",
         "HLTB Completionist Time": 7.0
+    },
+    {
+        "AppID": 1444750,
+        "Title": "DreamWatcher",
+        "Rarest Achievement %": "10.6",
+        "HLTB ID": 99601,
+        "HLTB Title": "DreamWatcher",
+        "HLTB Completionist Time": 3.8
     },
     {
         "AppID": 1445790,
@@ -70784,6 +71176,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 1449100,
+        "Title": "Kore",
+        "Rarest Achievement %": "8.2",
+        "HLTB ID": 94526,
+        "HLTB Title": "Kore",
+        "HLTB Completionist Time": 0.45
+    },
+    {
         "AppID": 1449320,
         "Title": "Alfred Hitchcock - Vertigo",
         "Rarest Achievement %": "15.7",
@@ -70830,6 +71230,14 @@
         "HLTB ID": 109778,
         "HLTB Title": "Lone Ruin",
         "HLTB Completionist Time": 4.0
+    },
+    {
+        "AppID": 1453600,
+        "Title": "Night Reverie: Prologue",
+        "Rarest Achievement %": "8.6",
+        "HLTB ID": 98285,
+        "HLTB Title": "Night Reverie: Prologue",
+        "HLTB Completionist Time": 1.14
     },
     {
         "AppID": 1453710,
@@ -71080,6 +71488,14 @@
         "HLTB Completionist Time": 19.2
     },
     {
+        "AppID": 1469620,
+        "Title": "Epic Battle Fantasy Collection",
+        "Rarest Achievement %": "5.7",
+        "HLTB ID": 108556,
+        "HLTB Title": "Epic Battle Fantasy Collection",
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 1470220,
         "Title": "Movie Tycoon Simulator 2020",
         "Rarest Achievement %": "1.4",
@@ -71216,6 +71632,14 @@
         "HLTB Completionist Time": 1.0
     },
     {
+        "AppID": 1482840,
+        "Title": "Come with Me",
+        "Rarest Achievement %": "8.2",
+        "HLTB ID": 97028,
+        "HLTB Title": "Come With Me",
+        "HLTB Completionist Time": 0.7
+    },
+    {
         "AppID": 1482910,
         "Title": "Idle Monster TD",
         "Rarest Achievement %": "1.8",
@@ -71248,12 +71672,28 @@
         "HLTB Completionist Time": 47.06
     },
     {
+        "AppID": 1484800,
+        "Title": "Zardy's Maze",
+        "Rarest Achievement %": "0.7",
+        "HLTB ID": 99843,
+        "HLTB Title": "Zardy's Maze",
+        "HLTB Completionist Time": 17.4
+    },
+    {
         "AppID": 1484900,
         "Title": "Hoa",
         "Rarest Achievement %": "20.7",
         "HLTB ID": 90531,
         "HLTB Title": "Hoa",
         "HLTB Completionist Time": 2.8
+    },
+    {
+        "AppID": 1485080,
+        "Title": "Just Act Natural",
+        "Rarest Achievement %": "0.1",
+        "HLTB ID": 99727,
+        "HLTB Title": "Just Act Natural",
+        "HLTB Completionist Time": null
     },
     {
         "AppID": 1485340,
@@ -71360,6 +71800,14 @@
         "HLTB Completionist Time": 2.31
     },
     {
+        "AppID": 1492160,
+        "Title": "Doll Explorer Prologue",
+        "Rarest Achievement %": "29.8",
+        "HLTB ID": 89064,
+        "HLTB Title": "Doll Explorer - Prologue",
+        "HLTB Completionist Time": 0.64
+    },
+    {
         "AppID": 1493360,
         "Title": "Clouzy!",
         "Rarest Achievement %": "5.0",
@@ -71464,6 +71912,14 @@
         "HLTB Completionist Time": 12.54
     },
     {
+        "AppID": 1503280,
+        "Title": "Octarina",
+        "Rarest Achievement %": "0.9",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 1503580,
         "Title": "Epic City Builder 4",
         "Rarest Achievement %": "0.3",
@@ -71552,6 +72008,14 @@
         "HLTB Completionist Time": 36.87
     },
     {
+        "AppID": 1511860,
+        "Title": "Swallow the Sea",
+        "Rarest Achievement %": "3.0",
+        "HLTB ID": 82508,
+        "HLTB Title": "Swallow the Sea",
+        "HLTB Completionist Time": 1.51
+    },
+    {
         "AppID": 1512480,
         "Title": "Gunlocked",
         "Rarest Achievement %": "0.7",
@@ -71582,6 +72046,14 @@
         "HLTB ID": 101496,
         "HLTB Title": "The Past Within",
         "HLTB Completionist Time": 3.88
+    },
+    {
+        "AppID": 1515290,
+        "Title": "Boodunnit",
+        "Rarest Achievement %": "2.0",
+        "HLTB ID": 96644,
+        "HLTB Title": "Boodunnit",
+        "HLTB Completionist Time": 1.03
     },
     {
         "AppID": 1515490,
@@ -71766,6 +72238,14 @@
         "HLTB ID": 115097,
         "HLTB Title": "Harmony's Odyssey",
         "HLTB Completionist Time": 5.95
+    },
+    {
+        "AppID": 1532180,
+        "Title": "Evo\\Wave",
+        "Rarest Achievement %": "9.1",
+        "HLTB ID": 90296,
+        "HLTB Title": "Evo Wave",
+        "HLTB Completionist Time": 3.09
     },
     {
         "AppID": 1534550,
@@ -72056,6 +72536,22 @@
         "HLTB Completionist Time": 0.5
     },
     {
+        "AppID": 1554790,
+        "Title": "Coloring Game 4",
+        "Rarest Achievement %": "3.0",
+        "HLTB ID": 92431,
+        "HLTB Title": "Coloring Game 4",
+        "HLTB Completionist Time": 169.33
+    },
+    {
+        "AppID": 1554860,
+        "Title": "Cognition Method: Initiation",
+        "Rarest Achievement %": "14.0",
+        "HLTB ID": 92853,
+        "HLTB Title": "Cognition Method: Initiation",
+        "HLTB Completionist Time": 0.7
+    },
+    {
         "AppID": 1556870,
         "Title": "Golf Club Nostalgia",
         "Rarest Achievement %": "1.4",
@@ -72152,12 +72648,36 @@
         "HLTB Completionist Time": 4.08
     },
     {
+        "AppID": 1565290,
+        "Title": "Survival Horror #8,436",
+        "Rarest Achievement %": "2.9",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 1566200,
         "Title": "Tape to Tape",
         "Rarest Achievement %": "1.5",
         "HLTB ID": 108274,
         "HLTB Title": "Tape to Tape",
         "HLTB Completionist Time": 61.4
+    },
+    {
+        "AppID": 1567740,
+        "Title": "To Hell With It",
+        "Rarest Achievement %": "5.5",
+        "HLTB ID": 92009,
+        "HLTB Title": "To Hell With It",
+        "HLTB Completionist Time": 1.45
+    },
+    {
+        "AppID": 1568400,
+        "Title": "Sheepy: A Short Adventure",
+        "Rarest Achievement %": "1.7",
+        "HLTB ID": 145299,
+        "HLTB Title": "Sheepy: A Short Adventure",
+        "HLTB Completionist Time": 3.65
     },
     {
         "AppID": 1568540,
@@ -72208,6 +72728,14 @@
         "HLTB Completionist Time": 6.73
     },
     {
+        "AppID": 1569620,
+        "Title": "Lab Rags",
+        "Rarest Achievement %": "5.1",
+        "HLTB ID": 92434,
+        "HLTB Title": "Lab Rags",
+        "HLTB Completionist Time": 3.0
+    },
+    {
         "AppID": 1570070,
         "Title": "Beholder 3",
         "Rarest Achievement %": "4.2",
@@ -72224,12 +72752,28 @@
         "HLTB Completionist Time": 50.83
     },
     {
+        "AppID": 1570730,
+        "Title": "Super Totally Ultimate Dad Showdown",
+        "Rarest Achievement %": "2.5",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 1571100,
         "Title": "Passpartout 2: The Lost Artist",
         "Rarest Achievement %": "1.6",
         "HLTB ID": 113172,
         "HLTB Title": "Passpartout 2: The Lost Artist",
         "HLTB Completionist Time": 7.61
+    },
+    {
+        "AppID": 1571440,
+        "Title": "Lunch Lady",
+        "Rarest Achievement %": "0.2",
+        "HLTB ID": 91878,
+        "HLTB Title": "Lunch Lady",
+        "HLTB Completionist Time": 62.77
     },
     {
         "AppID": 1572080,
@@ -72302,6 +72846,14 @@
         "HLTB ID": 120267,
         "HLTB Title": "Salt 2: Shores of Gold",
         "HLTB Completionist Time": 24.5
+    },
+    {
+        "AppID": 1575690,
+        "Title": "Super Maze Labyrinth",
+        "Rarest Achievement %": "15.1",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
     },
     {
         "AppID": 1577120,
@@ -72416,6 +72968,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 1586800,
+        "Title": "Lil Gator Game",
+        "Rarest Achievement %": "26.2",
+        "HLTB ID": 91184,
+        "HLTB Title": "Lil Gator Game",
+        "HLTB Completionist Time": 5.13
+    },
+    {
         "AppID": 1587130,
         "Title": "Blood West",
         "Rarest Achievement %": "0.7",
@@ -72480,6 +73040,14 @@
         "HLTB Completionist Time": 31.62
     },
     {
+        "AppID": 1592260,
+        "Title": "Metamorphos",
+        "Rarest Achievement %": "6.5",
+        "HLTB ID": 93075,
+        "HLTB Title": "Metamorphos",
+        "HLTB Completionist Time": 1.31
+    },
+    {
         "AppID": 1593030,
         "Title": "Terra Nil",
         "Rarest Achievement %": "0.7",
@@ -72496,12 +73064,36 @@
         "HLTB Completionist Time": 51.08
     },
     {
+        "AppID": 1593750,
+        "Title": "Creatures of Aether",
+        "Rarest Achievement %": "2.2",
+        "HLTB ID": 94390,
+        "HLTB Title": "Creatures of Aether",
+        "HLTB Completionist Time": 46.3
+    },
+    {
         "AppID": 1593780,
         "Title": "Organs Please",
         "Rarest Achievement %": "0.2",
         "HLTB ID": 94676,
         "HLTB Title": "Organs Please",
         "HLTB Completionist Time": 14.74
+    },
+    {
+        "AppID": 1594410,
+        "Title": "Hellevator",
+        "Rarest Achievement %": "5.1",
+        "HLTB ID": 94587,
+        "HLTB Title": "Hellevator",
+        "HLTB Completionist Time": 3.33
+    },
+    {
+        "AppID": 1594900,
+        "Title": "A long Time",
+        "Rarest Achievement %": "57.5",
+        "HLTB ID": 113752,
+        "HLTB Title": "A Long Time",
+        "HLTB Completionist Time": 0.15
     },
     {
         "AppID": 1597200,
@@ -72544,6 +73136,14 @@
         "HLTB Completionist Time": 2.85
     },
     {
+        "AppID": 1598010,
+        "Title": "Wild Dive",
+        "Rarest Achievement %": "2.7",
+        "HLTB ID": 93889,
+        "HLTB Title": "Wild Dive",
+        "HLTB Completionist Time": 0.36
+    },
+    {
         "AppID": 1599020,
         "Title": "Tinykin",
         "Rarest Achievement %": "12.4",
@@ -72574,6 +73174,14 @@
         "HLTB ID": 104062,
         "HLTB Title": "Not Tonight 2",
         "HLTB Completionist Time": 10.5
+    },
+    {
+        "AppID": 1601850,
+        "Title": "Greedy Goblin",
+        "Rarest Achievement %": "4.8",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
     },
     {
         "AppID": 1601970,
@@ -72734,6 +73342,14 @@
         "HLTB ID": 118536,
         "HLTB Title": "ARRIVAL: ZERO EARTH",
         "HLTB Completionist Time": 25.88
+    },
+    {
+        "AppID": 1614040,
+        "Title": "How We Got Here",
+        "Rarest Achievement %": "9.1",
+        "HLTB ID": 92450,
+        "HLTB Title": "How We Got Here",
+        "HLTB Completionist Time": 1.58
     },
     {
         "AppID": 1614270,
@@ -73240,6 +73856,14 @@
         "HLTB Completionist Time": 3.67
     },
     {
+        "AppID": 1664360,
+        "Title": "Monuments Renovator: Prologue",
+        "Rarest Achievement %": "14.1",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 1664670,
         "Title": "Refactor",
         "Rarest Achievement %": "1.3",
@@ -73259,6 +73883,14 @@
         "AppID": 1666720,
         "Title": "\ub85c\uc2a4\ud305 \ub9ac\ud3ec\ud2b8:\ub300\ud559\uc0dd \uc218\uba74\uc81c \uc0ac\ub9dd\uc0ac\uac74",
         "Rarest Achievement %": "25.8",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 1667770,
+        "Title": "Samurai Shampoo",
+        "Rarest Achievement %": "3.1",
         "HLTB ID": null,
         "HLTB Title": null,
         "HLTB Completionist Time": null
@@ -73406,6 +74038,14 @@
         "HLTB ID": 86020,
         "HLTB Title": "The Spirit and The Mouse",
         "HLTB Completionist Time": 6.03
+    },
+    {
+        "AppID": 1679290,
+        "Title": "Fire & Maneuver",
+        "Rarest Achievement %": "0.5",
+        "HLTB ID": 110854,
+        "HLTB Title": "Fire & Maneuver",
+        "HLTB Completionist Time": null
     },
     {
         "AppID": 1679510,
@@ -73776,6 +74416,14 @@
         "HLTB Completionist Time": 9.22
     },
     {
+        "AppID": 1719390,
+        "Title": "Cards and Castles 2",
+        "Rarest Achievement %": "2.6",
+        "HLTB ID": 140640,
+        "HLTB Title": "Cards and Castles 2",
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 1720090,
         "Title": "Aspire: Ina's Tale",
         "Rarest Achievement %": "6.7",
@@ -73934,6 +74582,14 @@
         "HLTB ID": 95584,
         "HLTB Title": "LEGO Brawls",
         "HLTB Completionist Time": 18.12
+    },
+    {
+        "AppID": 1731720,
+        "Title": "FURRY SEX: Cabaret \ud83d\udc8b\ud83d\udd1e",
+        "Rarest Achievement %": "9.1",
+        "HLTB ID": 127566,
+        "HLTB Title": "FURRY SEX: Cabaret",
+        "HLTB Completionist Time": null
     },
     {
         "AppID": 1732750,
@@ -74136,6 +74792,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 1757610,
+        "Title": "Puppet Master: The Game",
+        "Rarest Achievement %": "1.1",
+        "HLTB ID": 125141,
+        "HLTB Title": "Puppet Master: The Game",
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 1761290,
         "Title": "Japanese Rail Sim: Journey to Kyoto",
         "Rarest Achievement %": "2.2",
@@ -74184,6 +74848,14 @@
         "HLTB Completionist Time": 77.16
     },
     {
+        "AppID": 1768550,
+        "Title": "A.R.D. Alien Removal Division",
+        "Rarest Achievement %": "2.3",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 1768660,
         "Title": "Saffron Fields",
         "Rarest Achievement %": "44.1",
@@ -74222,6 +74894,14 @@
         "HLTB ID": 123275,
         "HLTB Title": "Gigantosaurus: Dino Kart",
         "HLTB Completionist Time": 4.0
+    },
+    {
+        "AppID": 1776160,
+        "Title": "You Will (Not) Remain",
+        "Rarest Achievement %": "24.0",
+        "HLTB ID": 102481,
+        "HLTB Title": "You Will (Not) Remain",
+        "HLTB Completionist Time": 1.15
     },
     {
         "AppID": 1777000,
@@ -74712,6 +75392,14 @@
         "HLTB Completionist Time": 5.45
     },
     {
+        "AppID": 1834870,
+        "Title": "Lily's Well",
+        "Rarest Achievement %": "8.3",
+        "HLTB ID": 102885,
+        "HLTB Title": "Lily's Well",
+        "HLTB Completionist Time": 3.01
+    },
+    {
         "AppID": 1835240,
         "Title": "Spiritfall",
         "Rarest Achievement %": "3.3",
@@ -74758,6 +75446,14 @@
         "HLTB ID": 125189,
         "HLTB Title": "King of The Castle",
         "HLTB Completionist Time": 2.1
+    },
+    {
+        "AppID": 1840130,
+        "Title": "Sword of Atlas",
+        "Rarest Achievement %": "24.3",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
     },
     {
         "AppID": 1840430,
@@ -74880,6 +75576,22 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 1865370,
+        "Title": "The one who pulls out the sword will be crowned king",
+        "Rarest Achievement %": "13.7",
+        "HLTB ID": 106181,
+        "HLTB Title": "The one who pulls out the sword will be crowned king",
+        "HLTB Completionist Time": 0.6
+    },
+    {
+        "AppID": 1865440,
+        "Title": "Cave Crawler",
+        "Rarest Achievement %": "24.1",
+        "HLTB ID": 103308,
+        "HLTB Title": "Cave Crawler",
+        "HLTB Completionist Time": 0.33
+    },
+    {
         "AppID": 1866120,
         "Title": "Heartwood Heroes",
         "Rarest Achievement %": "1.1",
@@ -74965,6 +75677,14 @@
         "Rarest Achievement %": "4.2",
         "HLTB ID": 108450,
         "HLTB Title": "LOST EMBER - VR Edition",
+        "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 1881040,
+        "Title": "DreadMoon",
+        "Rarest Achievement %": "4.6",
+        "HLTB ID": 142103,
+        "HLTB Title": "DreadMoon",
         "HLTB Completionist Time": null
     },
     {
@@ -75216,6 +75936,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 1916290,
+        "Title": "One Night With Stalin",
+        "Rarest Achievement %": "47.1",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 1918040,
         "Title": "Army of Ruin",
         "Rarest Achievement %": "4.4",
@@ -75312,6 +76040,14 @@
         "HLTB Completionist Time": 19.83
     },
     {
+        "AppID": 1924490,
+        "Title": "Gigantic: Rampage Edition",
+        "Rarest Achievement %": "0.0",
+        "HLTB ID": 41986,
+        "HLTB Title": "Gigantic",
+        "HLTB Completionist Time": 23.2
+    },
+    {
         "AppID": 1925860,
         "Title": "Seonbi : Scholar of Joseon",
         "Rarest Achievement %": "3.8",
@@ -75358,6 +76094,14 @@
         "HLTB ID": 106609,
         "HLTB Title": "Cook Serve Forever",
         "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 1929610,
+        "Title": "Demonologist",
+        "Rarest Achievement %": "1.7",
+        "HLTB ID": 126538,
+        "HLTB Title": "Demonologist",
+        "HLTB Completionist Time": 20.45
     },
     {
         "AppID": 1929870,
@@ -75550,6 +76294,14 @@
         "HLTB ID": 110659,
         "HLTB Title": "Necrosmith",
         "HLTB Completionist Time": 14.4
+    },
+    {
+        "AppID": 1949740,
+        "Title": "Banana Shooter",
+        "Rarest Achievement %": "0.2",
+        "HLTB ID": 131414,
+        "HLTB Title": "Banana Shooter",
+        "HLTB Completionist Time": null
     },
     {
         "AppID": 1951660,
@@ -75816,6 +76568,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 1985770,
+        "Title": "Nazi Furry",
+        "Rarest Achievement %": "15.6",
+        "HLTB ID": 132916,
+        "HLTB Title": "Nazi Furry",
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 1988550,
         "Title": "To The Core",
         "Rarest Achievement %": "5.3",
@@ -75838,6 +76598,14 @@
         "HLTB ID": 132210,
         "HLTB Title": "SpellRogue",
         "HLTB Completionist Time": 1.68
+    },
+    {
+        "AppID": 1992370,
+        "Title": "FURRY HITLER",
+        "Rarest Achievement %": "14.4",
+        "HLTB ID": 113847,
+        "HLTB Title": "FURRY HITLER",
+        "HLTB Completionist Time": 1.5
     },
     {
         "AppID": 1992480,
@@ -75885,6 +76653,14 @@
         "Rarest Achievement %": "0.4",
         "HLTB ID": 138401,
         "HLTB Title": "Keeper's Toll",
+        "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 2004490,
+        "Title": "Furry Cyberfucker II",
+        "Rarest Achievement %": "1.8",
+        "HLTB ID": null,
+        "HLTB Title": null,
         "HLTB Completionist Time": null
     },
     {
@@ -75968,6 +76744,22 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 2010450,
+        "Title": "Endlanders : First Encounter",
+        "Rarest Achievement %": "6.0",
+        "HLTB ID": 110168,
+        "HLTB Title": "Endlanders: First Encounter",
+        "HLTB Completionist Time": 1.9
+    },
+    {
+        "AppID": 2012620,
+        "Title": "FURRY CYBERSEX",
+        "Rarest Achievement %": "62.6",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 2012840,
         "Title": "Portal with RTX",
         "Rarest Achievement %": "1.1",
@@ -76040,12 +76832,28 @@
         "HLTB Completionist Time": 16.67
     },
     {
+        "AppID": 2023430,
+        "Title": "Hermea",
+        "Rarest Achievement %": "32.2",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 2026260,
         "Title": "Ocnus Theory",
         "Rarest Achievement %": "6.8",
         "HLTB ID": 143329,
         "HLTB Title": "Ocnus Theory",
         "HLTB Completionist Time": 45.0
+    },
+    {
+        "AppID": 2026990,
+        "Title": "Tv\u00f6",
+        "Rarest Achievement %": "1.7",
+        "HLTB ID": 111821,
+        "HLTB Title": "Tv\u00f6",
+        "HLTB Completionist Time": 2.32
     },
     {
         "AppID": 2027510,
@@ -76134,6 +76942,14 @@
         "HLTB ID": null,
         "HLTB Title": null,
         "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 2056560,
+        "Title": "Rock Life: The Rock Simulator",
+        "Rarest Achievement %": "1.2",
+        "HLTB ID": 124938,
+        "HLTB Title": "Rock Life: The Rock Simulator",
+        "HLTB Completionist Time": 133.17
     },
     {
         "AppID": 2058180,
@@ -76344,12 +77160,28 @@
         "HLTB Completionist Time": 60.0
     },
     {
+        "AppID": 2083040,
+        "Title": "Nova Lands: Emilia's Mission",
+        "Rarest Achievement %": "7.3",
+        "HLTB ID": 114809,
+        "HLTB Title": "Nova Lands: Emilia's Mission",
+        "HLTB Completionist Time": 5.03
+    },
+    {
         "AppID": 2083160,
         "Title": "Disfigure",
         "Rarest Achievement %": "0.8",
         "HLTB ID": 118550,
         "HLTB Title": "Disfigure",
         "HLTB Completionist Time": 25.25
+    },
+    {
+        "AppID": 2084050,
+        "Title": "Unsolved Case",
+        "Rarest Achievement %": "1.2",
+        "HLTB ID": 118477,
+        "HLTB Title": "Unsolved Case",
+        "HLTB Completionist Time": 1.48
     },
     {
         "AppID": 2084300,
@@ -76406,6 +77238,14 @@
         "HLTB ID": 133837,
         "HLTB Title": "Picayune Dreams",
         "HLTB Completionist Time": 23.06
+    },
+    {
+        "AppID": 2090150,
+        "Title": "Furry Sex: Poker \ud83c\udccf\u2665\ufe0f",
+        "Rarest Achievement %": "2.9",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
     },
     {
         "AppID": 2090230,
@@ -76640,6 +77480,22 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 2119110,
+        "Title": "Furry Sex: Pirates \ud83c\udff4\u200d\u2620\ufe0f",
+        "Rarest Achievement %": "14.9",
+        "HLTB ID": 128961,
+        "HLTB Title": "Furry Sex: Pirates",
+        "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 2119740,
+        "Title": "United heist",
+        "Rarest Achievement %": "10.6",
+        "HLTB ID": 127483,
+        "HLTB Title": "united heist",
+        "HLTB Completionist Time": 1.57
+    },
+    {
         "AppID": 2120310,
         "Title": "Sagres",
         "Rarest Achievement %": "6.2",
@@ -76728,6 +77584,14 @@
         "HLTB Completionist Time": 3.95
     },
     {
+        "AppID": 2139870,
+        "Title": "Skelethrone: The Prey",
+        "Rarest Achievement %": "1.2",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 2140020,
         "Title": "Stronghold: Definitive Edition",
         "Rarest Achievement %": "0.5",
@@ -76744,12 +77608,36 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 2142840,
+        "Title": "Light of Alariya",
+        "Rarest Achievement %": "3.1",
+        "HLTB ID": 126186,
+        "HLTB Title": "Light of Alariya",
+        "HLTB Completionist Time": 2.2
+    },
+    {
+        "AppID": 2143030,
+        "Title": "Cave Crawlers",
+        "Rarest Achievement %": "0.1",
+        "HLTB ID": 132194,
+        "HLTB Title": "Cave Crawlers",
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 2143050,
         "Title": "Red Line",
         "Rarest Achievement %": "13.2",
         "HLTB ID": 143437,
         "HLTB Title": "Red Line",
         "HLTB Completionist Time": 4.5
+    },
+    {
+        "AppID": 2143810,
+        "Title": "Furry Sex - GameDev Story \ud83c\udfae",
+        "Rarest Achievement %": "3.7",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
     },
     {
         "AppID": 2143950,
@@ -76806,6 +77694,14 @@
         "HLTB ID": null,
         "HLTB Title": null,
         "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 2153310,
+        "Title": "Buriedbornes - Dungeon RPG",
+        "Rarest Achievement %": "1.8",
+        "HLTB ID": 122829,
+        "HLTB Title": "Buriedbornes",
+        "HLTB Completionist Time": 93.0
     },
     {
         "AppID": 2153750,
@@ -76984,6 +77880,14 @@
         "HLTB Completionist Time": 1.98
     },
     {
+        "AppID": 2186400,
+        "Title": "Pirate Fighting Simulator",
+        "Rarest Achievement %": "4.5",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 2186570,
         "Title": "TELEFORUM",
         "Rarest Achievement %": "3.1",
@@ -77014,6 +77918,14 @@
         "HLTB ID": null,
         "HLTB Title": null,
         "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 2191550,
+        "Title": "Pleh!",
+        "Rarest Achievement %": "4.0",
+        "HLTB ID": 126145,
+        "HLTB Title": "Pleh!",
+        "HLTB Completionist Time": 6.89
     },
     {
         "AppID": 2193050,
@@ -77326,6 +78238,22 @@
         "HLTB ID": 150525,
         "HLTB Title": "Rogue Station",
         "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 2250060,
+        "Title": "I commissioned some bees 0",
+        "Rarest Achievement %": "34.9",
+        "HLTB ID": 121406,
+        "HLTB Title": "I Commissioned Some Bees 0",
+        "HLTB Completionist Time": 1.02
+    },
+    {
+        "AppID": 2250090,
+        "Title": "Missing Hiker",
+        "Rarest Achievement %": "39.8",
+        "HLTB ID": 124274,
+        "HLTB Title": "Missing Hiker",
+        "HLTB Completionist Time": 0.34
     },
     {
         "AppID": 2250470,
@@ -77648,6 +78576,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 2305810,
+        "Title": "Low Oxygen",
+        "Rarest Achievement %": "9.9",
+        "HLTB ID": 127439,
+        "HLTB Title": "Low Oxygen",
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 2305930,
         "Title": "Limbo Revolution",
         "Rarest Achievement %": "8.6",
@@ -77848,6 +78784,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 2348100,
+        "Title": "YEAH! YOU WANT \"THOSE GAMES,\" RIGHT? SO HERE YOU GO! NOW, LET'S SEE YOU CLEAR THEM!",
+        "Rarest Achievement %": "1.3",
+        "HLTB ID": 131930,
+        "HLTB Title": "Yeah! You Want \"Those Games\", Right? So Here You Go! Now, Let's See You Clear Them!",
+        "HLTB Completionist Time": 8.54
+    },
+    {
         "AppID": 2348610,
         "Title": "Slime 3K: Rise Against Despot",
         "Rarest Achievement %": "1.7",
@@ -78006,6 +78950,14 @@
         "HLTB ID": 13814,
         "HLTB Title": "Consortium",
         "HLTB Completionist Time": 12.04
+    },
+    {
+        "AppID": 2381620,
+        "Title": "Steam Engine Simulator",
+        "Rarest Achievement %": "4.1",
+        "HLTB ID": 130301,
+        "HLTB Title": "Steam Engine Simulator",
+        "HLTB Completionist Time": 28.13
     },
     {
         "AppID": 2386310,
@@ -78392,6 +79344,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 2494930,
+        "Title": "SLUDGE LIFE: The BIG MUD Sessions",
+        "Rarest Achievement %": "38.3",
+        "HLTB ID": 132410,
+        "HLTB Title": "Sludge Life: The BIG MUD Sessions",
+        "HLTB Completionist Time": 0.4
+    },
+    {
         "AppID": 2495980,
         "Title": "Arrow a Row",
         "Rarest Achievement %": "5.4",
@@ -78470,6 +79430,22 @@
         "HLTB ID": null,
         "HLTB Title": null,
         "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 2524680,
+        "Title": "Akatori: \u0421hapter One",
+        "Rarest Achievement %": "3.7",
+        "HLTB ID": 149131,
+        "HLTB Title": "Akatori: Chapter One",
+        "HLTB Completionist Time": 2.34
+    },
+    {
+        "AppID": 2524890,
+        "Title": "Pixel Gun 3D: PC Edition",
+        "Rarest Achievement %": "0.0",
+        "HLTB ID": 70987,
+        "HLTB Title": "Pixel Gun 3D",
+        "HLTB Completionist Time": 4.88
     },
     {
         "AppID": 2525880,
@@ -78576,6 +79552,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 2570630,
+        "Title": "20 Small Mazes",
+        "Rarest Achievement %": "54.6",
+        "HLTB ID": 145658,
+        "HLTB Title": "20 Small Mazes",
+        "HLTB Completionist Time": 1.06
+    },
+    {
         "AppID": 2573470,
         "Title": "Dice Assassin",
         "Rarest Achievement %": "39.2",
@@ -78664,6 +79648,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 2612680,
+        "Title": "Cureocity",
+        "Rarest Achievement %": "11.8",
+        "HLTB ID": 147418,
+        "HLTB Title": "Cureocity",
+        "HLTB Completionist Time": 1.94
+    },
+    {
         "AppID": 2613240,
         "Title": "Conquest Manager",
         "Rarest Achievement %": "0.0",
@@ -78702,6 +79694,14 @@
         "HLTB ID": 143566,
         "HLTB Title": "Welcome to the Karoshi Club",
         "HLTB Completionist Time": 0.3
+    },
+    {
+        "AppID": 2626910,
+        "Title": "Aviators",
+        "Rarest Achievement %": "1.5",
+        "HLTB ID": 144667,
+        "HLTB Title": "Aviators",
+        "HLTB Completionist Time": 3.9
     },
     {
         "AppID": 2626970,
@@ -79144,12 +80144,44 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 2784840,
+        "Title": "EGG",
+        "Rarest Achievement %": "3.5",
+        "HLTB ID": 145257,
+        "HLTB Title": "EGG",
+        "HLTB Completionist Time": 9.15
+    },
+    {
         "AppID": 2789770,
         "Title": "Epigraph",
         "Rarest Achievement %": "13.0",
         "HLTB ID": 146133,
         "HLTB Title": "Epigraph",
         "HLTB Completionist Time": 3.7
+    },
+    {
+        "AppID": 2795000,
+        "Title": "The WereCleaner",
+        "Rarest Achievement %": "10.4",
+        "HLTB ID": 150023,
+        "HLTB Title": "The WereCleaner",
+        "HLTB Completionist Time": 1.75
+    },
+    {
+        "AppID": 2796550,
+        "Title": "Rental",
+        "Rarest Achievement %": "13.2",
+        "HLTB ID": 146858,
+        "HLTB Title": "Rental",
+        "HLTB Completionist Time": 0.48
+    },
+    {
+        "AppID": 2831340,
+        "Title": "Rabbit Hole",
+        "Rarest Achievement %": "0.4",
+        "HLTB ID": 150241,
+        "HLTB Title": "Rabbit Hole",
+        "HLTB Completionist Time": null
     },
     {
         "AppID": 2838510,
@@ -79208,6 +80240,14 @@
         "HLTB Completionist Time": 1.24
     },
     {
+        "AppID": 2901340,
+        "Title": "Shush",
+        "Rarest Achievement %": "41.4",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 2923300,
         "Title": "Banana",
         "Rarest Achievement %": "53.4",
@@ -79246,6 +80286,22 @@
         "HLTB ID": null,
         "HLTB Title": null,
         "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 2979650,
+        "Title": "Ruiga Pirates: Cursed Seas",
+        "Rarest Achievement %": "1.7",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 2985610,
+        "Title": "The Big Catch: Tacklebox",
+        "Rarest Achievement %": "4.1",
+        "HLTB ID": 151946,
+        "HLTB Title": "The Big Catch: Tacklebox",
+        "HLTB Completionist Time": 11.95
     },
     {
         "AppID": 2996990,
