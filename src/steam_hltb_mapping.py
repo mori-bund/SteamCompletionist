@@ -18,6 +18,7 @@ import os
 import json
 from tqdm import tqdm
 from steam_utils import get_game_achievement_data, get_rarest_achievement_percentage
+from hltb_utils import get_time_by_id
 
 DATA_DIR = 'data'
 STEAM_HLTB_MAP_FILE = os.path.join(DATA_DIR, 'steam_hltb_map.json')
@@ -157,8 +158,9 @@ def update_rarest_achievement_percentages():
             return
 
     num_entries = len(data)
-    progress_bar = tqdm(total=num_entries, desc="Updating Rarest Achievements", unit="game", ncols=100)
-    
+    progress_bar = tqdm(total=num_entries, desc="Updating Rarest Achievements",
+                        unit="game", ncols=100)
+
     for entry in data:
         appid = entry.get('AppID')
         if appid:
@@ -173,3 +175,38 @@ def update_rarest_achievement_percentages():
         json.dump(data, jsonfile, indent=4)
 
     print("Updated Rarest Achievement % for all games in steam_hltb_map.json.")
+
+
+def update_hltb_completionist_times():
+    """
+    Update HLTB completionist times for all entries in the steam_hltb_map.json file.
+
+    This function iterates through the entries in the steam_hltb_map.json file, retrieves
+    the completionist time from HLTB using the HLTB ID, and updates the entry with the new time.
+    """
+    try:
+        with open('data/steam_hltb_map.json', 'r', encoding='utf-8') as file:
+            steam_hltb_map = json.load(file)
+    except FileNotFoundError:
+        print("Error: steam_hltb_map.json file not found.")
+        return
+    except json.JSONDecodeError:
+        print("Error: JSON decoding error in steam_hltb_map.json.")
+        return
+
+    progress_bar = tqdm(total=len(steam_hltb_map), unit='games', ncols=100, desc="Updating HLTB Completionist Times")
+
+    for entry in steam_hltb_map:
+        hltb_id = entry.get('HLTB ID')
+        if hltb_id:
+            try:
+                completionist_time = get_time_by_id(hltb_id)
+                entry['HLTB Completionist Time'] = completionist_time
+            except Exception as e:
+                print(f"Error processing HLTB ID {hltb_id} for game {entry.get('Game Name')}: {e}")
+        progress_bar.update(1)
+
+    progress_bar.close()
+
+    with open('data/steam_hltb_map.json', 'w', encoding='utf-8') as file:
+        json.dump(steam_hltb_map, file, indent=4, ensure_ascii=False)

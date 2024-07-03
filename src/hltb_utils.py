@@ -70,3 +70,27 @@ def get_hltb_data(game_name):
             return hltb_id, hltb_game_name, None if time == 0.0 else time
 
     return None, None, None
+
+
+def get_time_by_id(hltb_id):
+    """
+    Retrieve the completionist time from How Long to Beat for a specific game by its HLTB ID.
+
+    Args:
+        hltb_id (int): The HLTB ID of the game.
+
+    Returns:
+        float or None: The completionist time for the game, rounded to two decimal places.
+                       If no valid time is found, returns None.
+    """
+    result = hltb().search_from_id(hltb_id)
+
+    times = [
+        result.main_story,
+        result.main_extra,
+        result.completionist,
+        result.all_styles,
+    ]
+    time = round(max(times), 2)
+
+    return None if time == 0.0 else time

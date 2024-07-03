@@ -38,10 +38,11 @@ from file_utils import (
 )
 from steam_utils import get_owned_games, scrape_steam_data, resolve_vanity_url
 from steam_hltb_mapping import (
-    add_new_ids_from_users, 
-    load_existing_ids, 
-    sort_steam_hltb_map, 
-    update_rarest_achievement_percentages
+    add_new_ids_from_users,
+    load_existing_ids,
+    sort_steam_hltb_map,
+    update_rarest_achievement_percentages,
+    update_hltb_completionist_times
 )
 from config import STEAM_ID
 
@@ -96,9 +97,12 @@ def parse_arguments(parser):
                        action='store_true', help='Check and update no_achievements.txt')
     group.add_argument('-m', '--map-update',
                        action='store_true', help='Update steam_hltb_map.json')
-    group.add_argument('-r', '--sort-map', action='store_true', help='Sort the steam_hltb_map.json file')
+    group.add_argument('-r', '--sort-map', action='store_true',
+                       help='Sort the steam_hltb_map.json file')
     group.add_argument('-p', '--update-rarest', action='store_true',
                        help='Update the Rarest Achievement % for all games')
+    group.add_argument('-d', '--update-hltb', action='store_true',
+                       help='Update the HLTB Completionist Time for all games')
     return parser.parse_args()
 
 def handle_update_no_achievements():
@@ -191,6 +195,10 @@ def main():
 
     if args.update_rarest:
         update_rarest_achievement_percentages()
+        sys.exit()
+
+    if args.update_hltb:
+        update_hltb_completionist_times()
         sys.exit()
 
     steamid = resolve_steamid(args)
