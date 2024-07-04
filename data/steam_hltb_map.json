@@ -7128,6 +7128,14 @@
         "HLTB Completionist Time": 31.32
     },
     {
+        "AppID": 239120,
+        "Title": "Final Fantasy III (3D Remake)",
+        "Rarest Achievement %": "2.4",
+        "HLTB ID": 3497,
+        "HLTB Title": "Final Fantasy III (3D)",
+        "HLTB Completionist Time": 88.17
+    },
+    {
         "AppID": 239140,
         "Title": "Dying Light",
         "Rarest Achievement %": "0.9",
@@ -16046,6 +16054,14 @@
         "HLTB ID": 25738,
         "HLTB Title": "Khet 2.0",
         "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 312750,
+        "Title": "Final Fantasy IV (3D Remake)",
+        "Rarest Achievement %": "1.7",
+        "HLTB ID": 3500,
+        "HLTB Title": "Final Fantasy IV (3D)",
+        "HLTB Completionist Time": 70.77
     },
     {
         "AppID": 312780,
@@ -39672,6 +39688,14 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 502500,
+        "Title": "ACE COMBAT\u2122 7: SKIES UNKNOWN",
+        "Rarest Achievement %": "0.8",
+        "HLTB ID": 53763,
+        "HLTB Title": "Ace Combat 7: Skies Unknown",
+        "HLTB Completionist Time": 67.24
+    },
+    {
         "AppID": 502520,
         "Title": "Ultimate General: Civil War",
         "Rarest Achievement %": "1.2",
@@ -56576,6 +56600,14 @@
         "HLTB Completionist Time": 2.0
     },
     {
+        "AppID": 817510,
+        "Title": "Golfing Over It with Alva Majo",
+        "Rarest Achievement %": "3.5",
+        "HLTB ID": 55042,
+        "HLTB Title": "Golfing Over It with Alva Majo",
+        "HLTB Completionist Time": 4.48
+    },
+    {
         "AppID": 817540,
         "Title": "SpellForce 3: Soul Harvest",
         "Rarest Achievement %": "0.9",
@@ -62008,6 +62040,14 @@
         "HLTB Completionist Time": 11.5
     },
     {
+        "AppID": 990080,
+        "Title": "Hogwarts Legacy",
+        "Rarest Achievement %": "2.2",
+        "HLTB ID": 83145,
+        "HLTB Title": "Hogwarts Legacy",
+        "HLTB Completionist Time": 69.22
+    },
+    {
         "AppID": 990260,
         "Title": "Collapse: A Political Simulator",
         "Rarest Achievement %": "0.5",
@@ -62854,6 +62894,14 @@
         "HLTB ID": 134657,
         "HLTB Title": "WARSAW RISING: City of Heroes",
         "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 1026680,
+        "Title": "FINAL FANTASY VIII - REMASTERED",
+        "Rarest Achievement %": "6.3",
+        "HLTB ID": 3524,
+        "HLTB Title": "Final Fantasy VIII",
+        "HLTB Completionist Time": 78.2
     },
     {
         "AppID": 1027650,
@@ -65256,6 +65304,14 @@
         "HLTB Completionist Time": 23.0
     },
     {
+        "AppID": 1126190,
+        "Title": "Disney Classic Games Aladdin and the Lion King",
+        "Rarest Achievement %": "2.8",
+        "HLTB ID": 73131,
+        "HLTB Title": "Disney Classic Games: Aladdin and The Lion King",
+        "HLTB Completionist Time": 7.91
+    },
+    {
         "AppID": 1126320,
         "Title": "Being a DIK",
         "Rarest Achievement %": "1.8",
@@ -65438,6 +65494,14 @@
         "HLTB ID": 85926,
         "HLTB Title": "There Is No Light",
         "HLTB Completionist Time": 33.0
+    },
+    {
+        "AppID": 1133760,
+        "Title": "CHRONO CROSS: THE RADICAL DREAMERS EDITION",
+        "Rarest Achievement %": "2.1",
+        "HLTB ID": 1704,
+        "HLTB Title": "Chrono Cross",
+        "HLTB Completionist Time": 63.29
     },
     {
         "AppID": 1134100,
@@ -65934,6 +65998,14 @@
         "HLTB ID": 92423,
         "HLTB Title": "Learning Factory",
         "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 1150440,
+        "Title": "Aliens: Dark Descent",
+        "Rarest Achievement %": "1.6",
+        "HLTB ID": 110158,
+        "HLTB Title": "Aliens: Dark Descent",
+        "HLTB Completionist Time": 55.78
     },
     {
         "AppID": 1150890,
@@ -66502,6 +66574,54 @@
         "HLTB ID": 74471,
         "HLTB Title": "Metal Unit",
         "HLTB Completionist Time": 24.96
+    },
+    {
+        "AppID": 1173770,
+        "Title": "FINAL FANTASY",
+        "Rarest Achievement %": "18.5",
+        "HLTB ID": 3480,
+        "HLTB Title": "Final Fantasy",
+        "HLTB Completionist Time": 19.67
+    },
+    {
+        "AppID": 1173780,
+        "Title": "FINAL FANTASY II",
+        "Rarest Achievement %": "15.0",
+        "HLTB ID": 3495,
+        "HLTB Title": "Final Fantasy II",
+        "HLTB Completionist Time": 27.21
+    },
+    {
+        "AppID": 1173790,
+        "Title": "FINAL FANTASY III",
+        "Rarest Achievement %": "13.5",
+        "HLTB ID": 94537,
+        "HLTB Title": "Final Fantasy III",
+        "HLTB Completionist Time": 19.46
+    },
+    {
+        "AppID": 1173800,
+        "Title": "FINAL FANTASY IV",
+        "Rarest Achievement %": "9.7",
+        "HLTB ID": 3499,
+        "HLTB Title": "Final Fantasy IV",
+        "HLTB Completionist Time": 27.93
+    },
+    {
+        "AppID": 1173810,
+        "Title": "FINAL FANTASY V",
+        "Rarest Achievement %": "7.3",
+        "HLTB ID": 3516,
+        "HLTB Title": "Final Fantasy V",
+        "HLTB Completionist Time": 57.23
+    },
+    {
+        "AppID": 1173820,
+        "Title": "FINAL FANTASY VI",
+        "Rarest Achievement %": "2.8",
+        "HLTB ID": 3519,
+        "HLTB Title": "FINAL FANTASY VI",
+        "HLTB Completionist Time": 60.15
     },
     {
         "AppID": 1174180,
@@ -69008,6 +69128,14 @@
         "HLTB Completionist Time": 26.06
     },
     {
+        "AppID": 1295510,
+        "Title": "DRAGON QUEST XI S: Echoes of an Elusive Age \u2013 Definitive Edition",
+        "Rarest Achievement %": "5.5",
+        "HLTB ID": 69743,
+        "HLTB Title": "Dragon Quest XI S: Echoes of an Elusive Age - Definitive Edition",
+        "HLTB Completionist Time": 131.24
+    },
+    {
         "AppID": 1295760,
         "Title": "Moonfall",
         "Rarest Achievement %": "0.3",
@@ -69934,6 +70062,14 @@
         "HLTB ID": 90745,
         "HLTB Title": "Moonglow Bay",
         "HLTB Completionist Time": 27.66
+    },
+    {
+        "AppID": 1361510,
+        "Title": "Teenage Mutant Ninja Turtles: Shredder's Revenge",
+        "Rarest Achievement %": "1.4",
+        "HLTB ID": 89573,
+        "HLTB Title": "Teenage Mutant Ninja Turtles: Shredder's Revenge",
+        "HLTB Completionist Time": 19.85
     },
     {
         "AppID": 1361840,
@@ -71320,6 +71456,14 @@
         "HLTB Completionist Time": 5.73
     },
     {
+        "AppID": 1456760,
+        "Title": "ROBOBEAT",
+        "Rarest Achievement %": "0.3",
+        "HLTB ID": 110134,
+        "HLTB Title": "Robobeat",
+        "HLTB Completionist Time": 9.0
+    },
+    {
         "AppID": 1457320,
         "Title": "Techtonica",
         "Rarest Achievement %": "0.6",
@@ -71382,6 +71526,14 @@
         "HLTB ID": 115069,
         "HLTB Title": "Carnivores: Dinosaur Hunt",
         "HLTB Completionist Time": 12.0
+    },
+    {
+        "AppID": 1462040,
+        "Title": "FINAL FANTASY VII REMAKE INTERGRADE",
+        "Rarest Achievement %": "1.7",
+        "HLTB ID": 57686,
+        "HLTB Title": "Final Fantasy VII Remake",
+        "HLTB Completionist Time": 86.02
     },
     {
         "AppID": 1463120,
@@ -72688,6 +72840,14 @@
         "HLTB Completionist Time": 5.55
     },
     {
+        "AppID": 1568590,
+        "Title": "Goose Goose Duck",
+        "Rarest Achievement %": "0.1",
+        "HLTB ID": 92645,
+        "HLTB Title": "Goose Goose Duck",
+        "HLTB Completionist Time": 16.5
+    },
+    {
         "AppID": 1568620,
         "Title": "MetaPhysical",
         "Rarest Achievement %": "0.3",
@@ -72934,6 +73094,14 @@
         "HLTB ID": 106989,
         "HLTB Title": "Trolley Problem, Inc.",
         "HLTB Completionist Time": 2.51
+    },
+    {
+        "AppID": 1583230,
+        "Title": "High On Life",
+        "Rarest Achievement %": "0.5",
+        "HLTB ID": 109245,
+        "HLTB Title": "High On Life",
+        "HLTB Completionist Time": 20.89
     },
     {
         "AppID": 1583720,
@@ -73270,6 +73438,14 @@
         "HLTB ID": 95986,
         "HLTB Title": "Mail Time",
         "HLTB Completionist Time": 2.87
+    },
+    {
+        "AppID": 1608070,
+        "Title": "CRISIS CORE \u2013FINAL FANTASY VII\u2013 REUNION",
+        "Rarest Achievement %": "4.3",
+        "HLTB ID": 109435,
+        "HLTB Title": "Crisis Core: Final Fantasy VII Reunion",
+        "HLTB Completionist Time": 46.13
     },
     {
         "AppID": 1608230,
@@ -73800,6 +73976,14 @@
         "HLTB Completionist Time": 52.82
     },
     {
+        "AppID": 1659600,
+        "Title": "Teenage Mutant Ninja Turtles: The Cowabunga Collection",
+        "Rarest Achievement %": "2.7",
+        "HLTB ID": 107321,
+        "HLTB Title": "Teenage Mutant Ninja Turtles: The Cowabunga Collection",
+        "HLTB Completionist Time": 15.84
+    },
+    {
         "AppID": 1660520,
         "Title": "Pirates",
         "Rarest Achievement %": "0.7",
@@ -74174,6 +74358,14 @@
         "HLTB ID": null,
         "HLTB Title": null,
         "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 1693980,
+        "Title": "Dead Space",
+        "Rarest Achievement %": "4.2",
+        "HLTB ID": 95927,
+        "HLTB Title": "Dead Space",
+        "HLTB Completionist Time": 27.78
     },
     {
         "AppID": 1694310,
@@ -74830,6 +75022,14 @@
         "HLTB ID": 112181,
         "HLTB Title": "The Last Hero of Nostalgaia",
         "HLTB Completionist Time": 24.52
+    },
+    {
+        "AppID": 1766740,
+        "Title": "Choo-Choo Charles",
+        "Rarest Achievement %": "1.0",
+        "HLTB ID": 98559,
+        "HLTB Title": "Choo-Choo Charles",
+        "HLTB Completionist Time": 3.41
     },
     {
         "AppID": 1767220,
@@ -75912,6 +76112,14 @@
         "HLTB Completionist Time": 11.4
     },
     {
+        "AppID": 1913620,
+        "Title": "Puzzle Bobble\u21222X/BUST-A-MOVE\u21222 Arcade Edition & Puzzle Bobble\u21223/BUST-A-MOVE\u21223 S-Tribute",
+        "Rarest Achievement %": "9.5",
+        "HLTB ID": null,
+        "HLTB Title": null,
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 1914290,
         "Title": "Sociable Soccer 24",
         "Rarest Achievement %": "0.4",
@@ -76278,6 +76486,14 @@
         "HLTB ID": 139765,
         "HLTB Title": "Planet S",
         "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 1948450,
+        "Title": "Sex Chess",
+        "Rarest Achievement %": "9.1",
+        "HLTB ID": 119445,
+        "HLTB Title": "Sex Chess",
+        "HLTB Completionist Time": 5.8
     },
     {
         "AppID": 1948980,
@@ -79528,6 +79744,30 @@
         "HLTB Completionist Time": null
     },
     {
+        "AppID": 2552430,
+        "Title": "KINGDOM HEARTS -HD 1.5+2.5 ReMIX-",
+        "Rarest Achievement %": "0.1",
+        "HLTB ID": 42802,
+        "HLTB Title": "Kingdom Hearts HD 1.5 + 2.5 ReMIX",
+        "HLTB Completionist Time": 277.81
+    },
+    {
+        "AppID": 2552440,
+        "Title": "KINGDOM HEARTS HD 2.8 Final Chapter Prologue",
+        "Rarest Achievement %": "0.6",
+        "HLTB ID": 37863,
+        "HLTB Title": "Kingdom Hearts HD 2.8 Final Chapter Prologue",
+        "HLTB Completionist Time": 66.12
+    },
+    {
+        "AppID": 2552450,
+        "Title": "KINGDOM HEARTS III + Re Mind (DLC)",
+        "Rarest Achievement %": "1.5",
+        "HLTB ID": 13157,
+        "HLTB Title": "Kingdom Hearts III",
+        "HLTB Completionist Time": 64.04
+    },
+    {
         "AppID": 2552680,
         "Title": "Rogue Samurai",
         "Rarest Achievement %": "0.4",
@@ -79958,6 +80198,14 @@
         "HLTB ID": 149657,
         "HLTB Title": "Sicaria",
         "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 2710950,
+        "Title": "Revenge Of The Colon",
+        "Rarest Achievement %": "3.0",
+        "HLTB ID": 142652,
+        "HLTB Title": "Revenge Of The Colon",
+        "HLTB Completionist Time": 2.51
     },
     {
         "AppID": 2713070,
