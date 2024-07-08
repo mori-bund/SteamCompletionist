@@ -72440,6 +72440,14 @@
         "HLTB Completionist Time": 9.75
     },
     {
+        "AppID": 1537830,
+        "Title": "Disney Speedstorm",
+        "Rarest Achievement %": "1.7",
+        "HLTB ID": 127042,
+        "HLTB Title": "Disney Speedstorm",
+        "HLTB Completionist Time": 50.28
+    },
+    {
         "AppID": 1538040,
         "Title": "Horde Slayer",
         "Rarest Achievement %": "8.3",
@@ -80198,6 +80206,14 @@
         "HLTB ID": 149657,
         "HLTB Title": "Sicaria",
         "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 2707930,
+        "Title": "Palia",
+        "Rarest Achievement %": "0.1",
+        "HLTB ID": 93064,
+        "HLTB Title": "Palia",
+        "HLTB Completionist Time": 400.0
     },
     {
         "AppID": 2710950,
