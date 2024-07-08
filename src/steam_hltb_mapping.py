@@ -5,10 +5,13 @@ for games. It provides functionality to scan user JSON files containing game dat
 relevant information, and update the `steam_hltb_map.json` file with new entries.
 
 Functions:
-- add_new_ids_from_users(): Scan user JSON files and add new Steam IDs to the mapping file.
-- load_existing_ids(): Load existing Steam AppIDs from `steam_hltb_map.json`.
-- update_steam_hltb_map(new_entries): Update `steam_hltb_map.json` with new entries.
-- list_user_json_files(): List all user JSON files in the data directory.
+    - add_new_ids_from_users(): Scan user JSON files and add new Steam IDs to the mapping file.
+    - load_existing_ids(): Load existing Steam AppIDs from `steam_hltb_map.json`.
+    - update_steam_hltb_map(new_entries): Update `steam_hltb_map.json` with new entries.
+    - list_user_json_files(): List all user JSON files in the data directory.
+    - sort_steam_hltb_map(): Sort the `steam_hltb_map.json` file by AppID.
+    - update_rarest_achievement_percentages(): Update the Rarest Achievement % for each game.
+    - update_hltb_completionist_times(): Update HLTB completionist times for all entries.
 
 Example Usage:
     # Add new Steam IDs from user JSON files to the mapping file
@@ -26,7 +29,7 @@ STEAM_HLTB_MAP_FILE = os.path.join(DATA_DIR, 'steam_hltb_map.json')
 def add_new_ids_from_users():
     """
     Scan all user JSON files in the data directory and add any new Steam IDs
-    found to the steam_hltb_map.json file.
+    found to the `steam_hltb_map.json` file.
     """
     existing_ids = load_existing_ids()
 
@@ -62,10 +65,10 @@ def add_new_ids_from_users():
 
 def load_existing_ids():
     """
-    Load existing Steam IDs from steam_hltb_map.json.
+    Load existing Steam IDs from `steam_hltb_map.json`.
 
     Returns:
-        list: List of AppIDs from the existing steam_hltb_map.json.
+        dict: A dictionary of existing entries with AppIDs as keys.
     """
     if not os.path.exists(STEAM_HLTB_MAP_FILE):
         with open(STEAM_HLTB_MAP_FILE, 'w', encoding='utf-8') as jsonfile:
@@ -82,12 +85,12 @@ def load_existing_ids():
 
 def update_steam_hltb_map(new_entries):
     """
-    Update steam_hltb_map.json with new entries (AppID, HLTB ID, Title,
+    Update `steam_hltb_map.json` with new entries (AppID, HLTB ID, Title,
     Rarest Achievement %, HLTB Title, HLTB Completionist Time).
 
     Args:
         new_entries (list): List of dictionaries containing new entries to be added to the
-                            steam_hltb_map.json file. Each dictionary represents an entry
+                            `steam_hltb_map.json` file. Each dictionary represents an entry
                             with keys 'AppID', 'HLTB ID', 'Title', 'Rarest Achievement %',
                             'HLTB Title', 'HLTB Completionist Time'.
     """
@@ -124,7 +127,7 @@ def list_user_json_files():
 
 def sort_steam_hltb_map():
     """
-    Sort the steam_hltb_map.json file by AppID.
+    Sort the `steam_hltb_map.json` file by AppID.
     """
     if not os.path.exists(STEAM_HLTB_MAP_FILE):
         print("steam_hltb_map.json does not exist.")
@@ -147,7 +150,7 @@ def sort_steam_hltb_map():
 
 def update_rarest_achievement_percentages():
     """
-    Update the Rarest Achievement % for each game in steam_hltb_map.json
+    Update the Rarest Achievement % for each game in `steam_hltb_map.json`
     with a progress bar.
     """
     with open(STEAM_HLTB_MAP_FILE, 'r', encoding='utf-8') as jsonfile:
@@ -179,9 +182,9 @@ def update_rarest_achievement_percentages():
 
 def update_hltb_completionist_times():
     """
-    Update HLTB completionist times for all entries in the steam_hltb_map.json file.
+    Update HLTB completionist times for all entries in the `steam_hltb_map.json` file.
 
-    This function iterates through the entries in the steam_hltb_map.json file, retrieves
+    This function iterates through the entries in the `steam_hltb_map.json` file, retrieves
     the completionist time from HLTB using the HLTB ID, and updates the entry with the new time.
     """
     try:

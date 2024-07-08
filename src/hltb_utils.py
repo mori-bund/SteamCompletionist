@@ -6,6 +6,8 @@ This module provides functions to retrieve completion times for games from the H
 
 Functions:
     - get_hltb_data(game_name): Retrieve HLTB data for a specific game.
+    - get_time_by_id(hltb_id): Retrieve the completionist time from HLTB for a specific
+      game by its HLTB ID.
 
 Dependencies:
     - re: Module for regular expressions.

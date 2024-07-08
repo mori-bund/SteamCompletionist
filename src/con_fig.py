@@ -3,7 +3,8 @@
 Configuration template for the Steam Completionist project.
 
 This file serves as a template for configuring API keys and Steam ID.
-Rename this file to `config.py` and replace placeholders with actual API keys and IDs.
+Rename this file to `config.py` and replace placeholders with actual API keys and 
+your Steam ID.
 
 Attributes:
     API_KEY (str): Placeholder for API key. Replace with your actual API key.

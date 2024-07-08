@@ -58,7 +58,7 @@ def get_game_achievement_data(appid):
 
     Returns:
         list or None: A list of achievement data dictionaries for the game,
-                      or None if there are none.
+                      or None if there are no achievements.
     """
     try:
         achievement_data = api.ISteamUserStats.GetGlobalAchievementPercentagesForApp(
@@ -111,17 +111,17 @@ def player_has_completed(steamid, appid):
 
 def scrape_steam_data(steamid, game, progress_bar, existing_data):
     """
-    Scrape data for a game in a user's library to get the appid, title,
+    Scrape data for a game in a user's library to get the AppID, title,
     rarest achievement, and completion status.
 
     Args:
         steamid (str): The SteamID of the user.
         game (dict): Dictionary containing game data.
         progress_bar (object): A progress bar object to update.
-        existing_data (dict): Existing mapping data for appids to HLTB data.
+        existing_data (dict): Existing mapping data for AppIDs to HLTB data.
 
     Returns:
-        tuple: A tuple containing a list of scraped data and a list of appids with no achievements.
+        tuple: A tuple containing a list of scraped data and a list of AppIDs with no achievements.
     """
     scraped_data, no_achievements = [], []
 
