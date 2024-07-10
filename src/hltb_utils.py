@@ -56,7 +56,7 @@ def get_hltb_data(game_name):
     if not results_list and ':' in game_name:
         results_list = hltb().search(game_name.split(':')[0])
 
-    if len(results_list) > 0:
+    if results_list is not None and len(results_list) > 0:
         best_element = max(results_list, key=lambda element: element.similarity)
 
         if best_element:
