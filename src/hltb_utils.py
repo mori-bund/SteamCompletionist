@@ -41,7 +41,7 @@ def get_hltb_data(game_name):
         results_list = hltb().search(game_name.lower())
 
     # try searching after removing any details about the game edition
-    if not results_list and game_name.split()[-1].lower() == "edition":
+    if not results_list and 'edition' in game_name:
         results_list = hltb().search(game_name.rsplit(' ', 2)[0])
 
     # try searching after removing the year from the title
