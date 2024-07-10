@@ -197,7 +197,8 @@ def update_hltb_completionist_times():
         print("Error: JSON decoding error in steam_hltb_map.json.")
         return
 
-    progress_bar = tqdm(total=len(steam_hltb_map), unit='games', ncols=100, desc="Updating HLTB Completionist Times")
+    progress_bar = tqdm(total=len(steam_hltb_map), unit='games', ncols=100,
+                        desc="Updating HLTB Completionist Times")
 
     for entry in steam_hltb_map:
         hltb_id = entry.get('HLTB ID')
@@ -205,8 +206,10 @@ def update_hltb_completionist_times():
             try:
                 completionist_time = get_time_by_id(hltb_id)
                 entry['HLTB Completionist Time'] = completionist_time
-            except Exception as e:
-                print(f"Error processing HLTB ID {hltb_id} for game {entry.get('Game Name')}: {e}")
+            except Exception as error:
+                print(f"Error processing HLTB ID {hltb_id} for game "
+                f"{entry.get('Game Name')}: {error}")
+
         progress_bar.update(1)
 
     progress_bar.close()
