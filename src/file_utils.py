@@ -114,13 +114,19 @@ def update_no_achievements(appids, num_games, progress_bar):
         progress_bar (tqdm.tqdm): Progress bar for tracking progress.
     """
     updated_appids = []
+    removed_appids = []
+
     for appid in appids:
         if get_game_achievement_data(appid) is None:
             updated_appids.append(appid)
             num_games -= 1
+        else:
+            removed_appids.append(appid)
         progress_bar.update(1)
 
     with open(NO_ACHIEVEMENTS_PATH, 'w', encoding='utf-8') as jsonfile:
         json.dump(updated_appids, jsonfile, indent=4)
 
     print(f"\nRemoved {num_games} appid(s) that now have achievements.")
+    if removed_appids:
+        print("Removed AppIDs: " + ', '.join(map(str, removed_appids)))
