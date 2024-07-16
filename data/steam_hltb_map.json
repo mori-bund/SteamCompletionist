@@ -76384,6 +76384,14 @@
         "HLTB Completionist Time": 8.66
     },
     {
+        "AppID": 1538900,
+        "Title": "Untamed Tactics",
+        "Rarest Achievement %": "1.3",
+        "HLTB ID": 129884,
+        "HLTB Title": "Untamed Tactics",
+        "HLTB Completionist Time": null
+    },
+    {
         "AppID": 1539140,
         "Title": "STONKS-9800: Stock Market Simulator",
         "Rarest Achievement %": "0.1",
@@ -80422,6 +80430,14 @@
         "HLTB ID": 148106,
         "HLTB Title": "Frogmonster",
         "HLTB Completionist Time": 10.4
+    },
+    {
+        "AppID": 1856030,
+        "Title": "Fresh Start Cleaning Simulator",
+        "Rarest Achievement %": "10.2",
+        "HLTB ID": 114757,
+        "HLTB Title": "Fresh Start Cleaning Simulator",
+        "HLTB Completionist Time": 8.64
     },
     {
         "AppID": 1859370,
