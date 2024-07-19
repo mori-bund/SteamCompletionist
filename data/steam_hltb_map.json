@@ -66856,6 +66856,14 @@
         "HLTB Completionist Time": 23.3
     },
     {
+        "AppID": 1058560,
+        "Title": "Deathbloom: Chapter 1",
+        "Rarest Achievement %": "22.1",
+        "HLTB ID": 104337,
+        "HLTB Title": "Deathbloom: Chapter 1",
+        "HLTB Completionist Time": 3.2
+    },
+    {
         "AppID": 1058640,
         "Title": "RED HOT VENGEANCE",
         "Rarest Achievement %": "1.8",
@@ -70646,6 +70654,14 @@
         "HLTB ID": 81612,
         "HLTB Title": "Chaos Galaxy",
         "HLTB Completionist Time": null
+    },
+    {
+        "AppID": 1185470,
+        "Title": "Deathbloom: Chapter 2",
+        "Rarest Achievement %": "40.3",
+        "HLTB ID": 104800,
+        "HLTB Title": "Deathbloom: Chapter 2",
+        "HLTB Completionist Time": 2.0
     },
     {
         "AppID": 1185520,
