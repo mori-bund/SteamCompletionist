@@ -44,8 +44,7 @@ def get_owned_games(steamid):
                                                    appids_filter=False,
                                                    include_free_sub=False,
                                                    language='en',
-                                                   include_extended_appinfo=False,
-                                                   skip_unvetted_apps=False)
+                                                   include_extended_appinfo=False)
     return owned_games['response']['games']
 
 
