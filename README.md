@@ -53,6 +53,7 @@ To use the script, follow these steps:
    - Use the `-m` option to update the `steam_hltb_map.json` file with new Steam IDs from user JSON files.
    - Use the `-r` option to sort the `steam_hltb_map.json` file by AppID.
    - Use the `-p` option to update the rarest achievement percentage for every game in `steam_hltb_map.json`
+   - Use the `-d` option to HLTB Completionist Time for every game in `steam_hltb_map.json`
 
 ## Output
 
