@@ -44,7 +44,7 @@ To use the script, follow these steps:
 4. Run the script:
 
    ```shell
-   python src/main.py [-s STEAMID] [-v VANITY] [-u] [-m] [-r] [-p]
+   python src/main.py [-s STEAMID] [-v VANITY] [-u] [-m] [-r] [-p] [-d]
    ```
 
    - Use the `-s` option to specify a SteamID to scrape (optional). This will scrape it instead of the one in your `config.py` file.
