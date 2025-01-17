@@ -1,5 +1,5 @@
 
-howlongtobeatpy==1.0.14
+howlongtobeatpy==1.0.16
 pandas==2.2.3
 requests==2.32.3
 steam==1.4.4
