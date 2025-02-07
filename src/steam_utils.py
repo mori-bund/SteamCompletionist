@@ -81,7 +81,7 @@ def get_rarest_achievement_percentage(data):
     """
     rarest_percentage = min(data, key=lambda x: x.get(
         'percent', 100)).get('percent')
-    rounded_percentage = round(rarest_percentage, 1)
+    rounded_percentage = round(float(rarest_percentage), 1)
     return rounded_percentage
 
 
